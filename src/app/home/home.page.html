@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-title>
+      Home
+    </ion-title>
+    <ion-buttons slot="start">
+<ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-button color="light" slot="end" fill="clear" id="alignment-button">
+      <ion-icon name="notifications-outline"></ion-icon>
+     </ion-button>
+     <ion-popover trigger="alignment-button" side="bottom">
+       <ng-template>
+         <ion-content>
+           <ion-list>
+             <ion-item>
+              <ion-label>
+                Notification 1
+              </ion-label>
+             </ion-item>
+             <ion-item>
+              <ion-label>
+                Notification 2
+              </ion-label>
+            </ion-item>
+
+           </ion-list>
+         </ion-content>
+       </ng-template>
+     </ion-popover>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="flash-white"[fullscreen]="true">
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button fill="clear">
+      <a href="./home/"><img class="nav-bar-img" src="../../assets/icon/home-red.png" style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>
+    <ion-button fill="clear">
+      <a href="./my-account/"><img class="nav-bar-img" src="../../assets/icon/myaccount-black.png"  style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>
+    <ion-button fill="clear">
+      <a href="./promotions/"><img class="nav-bar-img" src="../../assets/icon/promotions-black.png"  style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>
+    <ion-button fill="clear">
+      <a href="./location/"><img class="nav-bar-img" src="../../assets/icon/location-black.png"  style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>
+  </ion-toolbar>
+
+
+  </ion-footer>

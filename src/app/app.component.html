@@ -1,0 +1,72 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar color="flash-white">
+        <ion-title>
+          Menu
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content color="flash-white">
+      <ion-list>
+        <ion-item href="./home/">
+          <img src="../assets/icon/home.png" style="width: 20px; height: 20px;" alt="" slot="start">
+          <ion-label>
+              Home
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item href="./my-account/">
+          <img src="../assets/icon/myaccount.png" style="width: 20px; height: 20px;" alt="" slot="start">
+          <ion-label>
+            My Account
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item href="./promotions/">
+          <img src="../assets/icon/promotions.png" style="width: 20px; height: 20px;" alt="" slot="start">
+          <ion-label>
+            Promotion
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item href="./pnv/">
+          <img src="../assets/icon/pnv.png" style="width: 20px; height: 20px;" alt="" slot="start">
+          <ion-label>
+            Point and Voucher
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item href="./location/">
+          <img src="../assets/icon/location.png" style="width: 20px; height: 20px;" alt="" slot="start">
+          <ion-label>
+            Location
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item href="./about-us/">
+          <img src="../assets/icon/about-us.png" style="width: 20px; height: 20px;" alt="" slot="start">
+          <ion-label>
+           About Us
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item href="./tnc/">
+          <img src="../assets/icon/tnc.png" style="width: 20px; height: 20px;" alt="" slot="start">
+          <ion-label>
+            Terms and Conditions
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
+
