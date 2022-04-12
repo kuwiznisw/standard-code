@@ -54,7 +54,7 @@
     </ion-col>
   </ion-row>
 </ion-grid>
-<ion-segment class="seg-scroll" scrollable mode="lg">
+<ion-segment scrollable [(ngModel)]="point" mode="md">
   <ion-segment-button value="POINT HISTORY">
     <ion-label>POINT HISTORY</ion-label>
   </ion-segment-button>
@@ -63,6 +63,9 @@
   </ion-segment-button>
 
 </ion-segment>
+<div [ngSwitch]="point">
+
+</div>
 <div>
   <h6>Purchasing history</h6>
   </div>
