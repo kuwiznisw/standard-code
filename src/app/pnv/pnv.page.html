@@ -55,25 +55,24 @@
   </ion-row>
 </ion-grid>
 <ion-segment scrollable [(ngModel)]="account" mode="md">
-  <ion-segment-button value="POINT HISTORY">
-    <ion-label>POINT HISTORY</ion-label>
+  <ion-segment-button value="MEMBER CARD">
+    <ion-label>MEMBER CARD</ion-label>
   </ion-segment-button>
-  <ion-segment-button value="PROFILE">
-    <ion-label>PROFILE</ion-label>
+  <ion-segment-button value="DETAIL">
+    <ion-label>DETAIL</ion-label>
   </ion-segment-button>
 
 </ion-segment>
 
 <div [ngSwitch]="account">
-  <div *ngSwitchCase="'POINT HISTORY'">
-    <p style="color: black;">TEST POINT HISTORY test</p>
+  <div *ngSwitchCase="'MEMBER CARD'">
+    <p style="color: black;">TEST MEMBER CARD</p>
   </div>
-  <div *ngSwitchCase="'PROFILE'">
-    <p style="color: black;">TEST PROFILE 10</p>
+  <div *ngSwitchCase="'DETAIL'">
+    <p style="color: black;">TEST DETAIL</p>
   </div>
 </div>
 
-</ion-segment>
 <div>
   <h6>Purchasing history</h6>
   </div>
