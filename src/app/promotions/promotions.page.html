@@ -1,0 +1,162 @@
+<ion-header translucent="true">
+  <ion-toolbar color="danger" mode="ios">
+    <ion-title>Promotions</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+          </ion-buttons>
+          <ion-button color="light" slot="end" fill="clear" id="alignment-button">
+           <ion-icon name="notifications-outline"></ion-icon>
+          </ion-button>
+          <ion-popover trigger="alignment-button" side="bottom">
+            <ng-template>
+              <ion-content>
+                <ion-list>
+                  <ion-item>
+                   <ion-label>
+                     Notification 1
+                   </ion-label>
+                  </ion-item>
+                  <ion-item>
+                   <ion-label>
+                     Notification 2
+                   </ion-label>
+                 </ion-item>
+
+                </ion-list>
+              </ion-content>
+            </ng-template>
+          </ion-popover>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="flash-white" fullscreen="">
+<br>
+<ion-label>
+    <h1 class="list-promo">List of Promotions</h1>
+  <br>
+  <br>
+</ion-label>
+<ion-grid>
+  <ion-row>
+  <ion-col>
+      <ion-card color="">
+        <ion-card-header>
+          <img src="../../assets/images/02.webp" style="height: 150px; width: 200px;" alt="">
+        </ion-card-header>
+        <ion-card-subtitle>
+          <p>PROMOTION 1</p>
+          <div class="ion-text-end">
+            <a href="./promotion1/"><ion-button style="size: default;" fill="clear">
+            <ion-icon color="dark" name="chevron-forward-circle-sharp"></ion-icon>
+            </ion-button>
+          </a>
+          </div>
+        </ion-card-subtitle>
+      </ion-card>
+  </ion-col>
+  <ion-col>
+    <ion-card color="">
+      <ion-card-header>
+      <img src="../../assets/images/01.jpg" style="height: 150px; width: 200px;" alt="">
+      </ion-card-header>
+      <ion-card-subtitle>
+        <p>PROMOTION 2</p>
+        <div class="ion-text-end">
+          <a href="./promotion1/"><ion-button style="size: default;" fill="clear">
+          <ion-icon color="dark" name="chevron-forward-circle-sharp"></ion-icon>
+          </ion-button>
+        </a>
+        </div>
+      </ion-card-subtitle>
+    </ion-card>
+  </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+        <ion-card color="">
+          <ion-card-header>
+          <img src="../../assets/images/03.webp" style="height: 150px; width: 200px;" alt="">
+          </ion-card-header>
+          <ion-card-subtitle>
+            <p>PROMOTION 3</p>
+            <div class="ion-text-end">
+              <a href="./promotion1/"><ion-button style="size: default;" fill="clear">
+              <ion-icon color="dark" name="chevron-forward-circle-sharp"></ion-icon>
+              </ion-button>
+            </a>
+            </div>
+          </ion-card-subtitle>
+        </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card color="">
+        <ion-card-header>
+          <img src="../../assets/images/05.jpg" style="height: 150px; width: 200px;" alt="">
+        </ion-card-header>
+        <ion-card-subtitle>
+          <p>PROMOTION 4</p>
+          <div class="ion-text-end">
+            <a href="./promotion1/"><ion-button style="size: default;" fill="clear">
+            <ion-icon color="dark" name="chevron-forward-circle-sharp"></ion-icon>
+            </ion-button>
+          </a>
+          </div>
+        </ion-card-subtitle>
+      </ion-card>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 col-xl-2 col-lg-3 col-md-4>
+          <ion-card color="">
+            <ion-card-header>
+              <img src="../../assets/images/02.webp" style="height: 150px; width: 200px;" alt="">
+            </ion-card-header>
+            <ion-card-subtitle>
+              <p>PROMOTION 5</p>
+              <div class="ion-text-end">
+                <a href="./promotion1/"><ion-button style="size: default;" fill="clear">
+                  <br>
+                  <ion-icon color="dark" name="chevron-forward-circle-sharp"></ion-icon>
+                </ion-button>
+              </a>
+              </div>
+            </ion-card-subtitle>
+          </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="">
+          <ion-card-header>
+          <img src="../../assets/images/01.jpg" style="height: 150px; width: 200px;" alt="">
+          </ion-card-header>
+          <ion-card-subtitle>
+            <p>PROMOTION 6</p>
+            <div class="ion-text-end">
+              <a href="./promotion1/"><ion-button style="size: default;" fill="clear">
+              <ion-icon color="dark" name="chevron-forward-circle-sharp"></ion-icon>
+              </ion-button>
+            </a>
+            </div>
+          </ion-card-subtitle>
+        </ion-card>
+      </ion-col>
+      </ion-row>
+</ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="light">
+    <ion-button fill="clear">
+      <a href="./home/"><img class="nav-bar-img" src="../../assets/icon/home-black.png" style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>
+    <ion-button fill="clear">
+      <a href="./my-account/"><img class="nav-bar-img" src="../../assets/icon/myaccount-black.png"  style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>
+    <ion-button fill="clear">
+      <a href="./promotions/"><img class="nav-bar-img" src="../../assets/icon/promotions-red.png"  style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>
+    <ion-button fill="clear">
+      <a href="./location/"><img class="nav-bar-img" src="../../assets/icon/location-black.png"  style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>
+  </ion-toolbar>
+
+
+  </ion-footer>
