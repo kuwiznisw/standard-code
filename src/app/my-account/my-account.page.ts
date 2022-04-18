@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-account.page.scss'],
 })
 export class MyAccountPage implements OnInit {
-
-  constructor() { }
+  router: any;
+  account: string = "MEMBER E-CARD";
+  constructor() { 
+  }
 
   ngOnInit() {
+  }
+
+  editProfile() {
+    this.router.navigate(["./edit-profile"])
   }
 
 }
