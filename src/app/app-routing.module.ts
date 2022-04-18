@@ -54,7 +54,11 @@ const routes: Routes = [
   {
     path: 'voucher-list',
     loadChildren: () => import('./voucher-list/voucher-list.module').then( m => m.VoucherListPageModule)
+  },  {
+    path: 'edit-profile',
+    loadChildren: () => import('./edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
   },
+
 ];
 
 @NgModule({

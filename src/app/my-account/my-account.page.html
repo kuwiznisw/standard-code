@@ -29,8 +29,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="flash-white">
-  <ion-segment scrollable [(ngModel)]="account" mode="md">
+<ion-content color="flash-white" [fullscreen]="true">
+  <ion-segment style="background-color: #edecec;"scrollable [(ngModel)]="account" mode="md">
     <ion-segment-button value="MEMBER E-CARD">
       <ion-label>MEMBER E-CARD</ion-label>
     </ion-segment-button>
@@ -41,11 +41,11 @@
   </ion-segment>
   
   <div [ngSwitch]="account">
-    <div *ngSwitchCase="'MEMBER E-CARD'">
+    <div *ngSwitchDefault="'MEMBER E-CARD'">
       <div style="margin-bottom:20px">
 
       </div>
-      <div style="margin-left: 10%; margin-right: 10%;">
+      <div class="e-card" style="margin-left: 10%; margin-right: 10%;">
       <ion-grid class="ion-padding">
         <ion-row>
           <ion-col class="ion-text-center">
@@ -104,7 +104,83 @@
       </div>
     </div>
     <div *ngSwitchCase="'DETAIL'">
-      <p style="color: black;">TEST DETAIL</p>
+      <div class="detail">
+        <ion-card>
+      <ion-row>
+        <ion-col>
+          <p class="label">Name</p>
+          <p class="info">Ali Baba</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">Phone Number</p>
+          <p class="info">01129223970</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Status</p>
+          <p class="info">Active</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">Member Type</p>
+          <p class="info">Free Member</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Email</p>
+          <p class="info">alibaba@gmail.com</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Address</p>
+          <p class="info">No. 11, Jalan Astana 5/KU2, Bandar Bukit Raja</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Zip Code</p>
+          <p class="info">41050</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">City</p>
+          <p class="info">Klang</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">State</p>
+          <p class="info">Selangor</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">IC Number</p>
+          <p class="info">991107035693</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">Date of Birth</p>
+          <p class="info">12-01-1995</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Gender</p>
+          <p class="info">Male</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">ID</p>
+          <p class="info">42983</p>
+        </ion-col>
+      </ion-row>
+      </ion-card>
+      <div class="ion-text-center">
+      <ion-button color="danger" href="./edit-profile/">
+        Edit Profile
+      </ion-button>
+      </div>
+      </div>
     </div>
   </div> 
 </ion-content>
