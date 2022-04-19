@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-account.page.scss'],
 })
 export class MyAccountPage implements OnInit {
-
+  account: String = 'MEMBER E-CARD';
   constructor() { }
 
   ngOnInit() {

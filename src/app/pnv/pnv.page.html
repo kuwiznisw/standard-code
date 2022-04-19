@@ -21,7 +21,11 @@
                      Notification 2
                    </ion-label>
                  </ion-item>
-
+                 <ion-item>
+                  <ion-label>
+                    Notification 3
+                  </ion-label>
+                 </ion-item>
                 </ion-list>
                </ion-content>
              </ng-template>
@@ -30,47 +34,161 @@
 </ion-header>
 
 <ion-content color="flash-white">
-<ion-grid>
-  <ion-row>
-    <ion-col>
-      <ion-card>
-        <ion-card-header>
-          Total Point
-        </ion-card-header>
-        <ion-card-subtitle>
-          12
-        </ion-card-subtitle>
-      </ion-card>
-    </ion-col>
-    <ion-col>
-      <ion-card href="../voucher-list/">
-        <ion-card-header>
-          Total Voucher
-        </ion-card-header>
-        <ion-card-subtitle>
-          10
-        </ion-card-subtitle>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-</ion-grid>
-<ion-segment scrollable value="point" mode="md">
-  <ion-segment-button value="VOUCHER-REWARD">
-    <ion-label>VOUCHER REWARDS</ion-label>
-  </ion-segment-button>
-  <ion-segment-button value="DETAIL">
-    <ion-label>DETAIL</ion-label>
-  </ion-segment-button>
+  <ion-segment scrollable [(ngModel)]="point">
+    <ion-segment-button value="VOUCHER-REWARD">
+      <ion-label>VOUCHER REWARDS</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="POINT-HISTORY">
+      <ion-label>POINT HISTORY</ion-label>
+    </ion-segment-button>
 
-</ion-segment>
+  </ion-segment>
 
 
 <div [ngSwitch]="point">
-  <div *ngSwitchCase="'VOUCHER-REWARD'">
-    <p style="color: black;">TEST VOUCHER REWARD 12w212</p>
+  <div *ngSwitchDefault="'VOUCHER-REWARD'">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              Total Voucher
+            </ion-card-header>
+            <ion-card-subtitle>
+              2
+            </ion-card-subtitle>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              Total Rewards
+            </ion-card-header>
+            <ion-card-subtitle>
+              2
+            </ion-card-subtitle>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-toolbar>
+      <h5>Voucher List</h5>
+    </ion-toolbar>
+    <br>
+    <ion-card>
+      <ion-card-header>
+        <ion-row>
+          <ion-col size="8">
+            <img src="../../assets/images/v2.jpg" alt="">
+          </ion-col>
+          <ion-col>
+            <br>
+            <a href="./voucher-details/"> <ion-button color="danger" class="btn">
+              Redeem <br> here
+            </ion-button>
+            </a>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-row>
+          <ion-col size="8">
+            <img src="../../assets/images/v1.jpg" alt="">
+          </ion-col>
+          <ion-col>
+            <br>
+            <a href="./voucher-list/"> <ion-button color="danger" class="btn">
+              Redeem <br> here
+            </ion-button>
+            </a>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+    </ion-card>
+    <ion-toolbar>
+      <h5>Rewards List</h5>
+    </ion-toolbar>
+    <br>
+    <ion-card>
+      <ion-card-header>
+        <ion-row>
+          <ion-col size="8">
+            <img src="../../assets/images/r2.jpg" alt="">
+          </ion-col>
+          <ion-col>
+            <br>
+            <a href="./reward-details/"> <ion-button color="danger" class="btn">
+              Claim <br> here
+            </ion-button>
+            </a>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-row>
+          <ion-col size="8">
+            <img src="../../assets/images/r1.jpg" alt="">
+          </ion-col>
+          <ion-col>
+            <br>
+            <a href="./reward-details/"> <ion-button color="danger" class="btn">
+              Claim <br> here
+            </ion-button>
+            </a>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+    </ion-card>
   </div>
+
+
   <div *ngSwitchCase="'POINT-HISTORY'">
-    <p style="color: black;">TEST POINT qwsa HISTORY</p>
+    <p style="color: black;"></p>
+    <ion-card>
+      <ion-card-header>
+        Total Point
+      </ion-card-header>
+      <ion-card-subtitle>
+        200
+      </ion-card-subtitle>
+    </ion-card>
+    <ion-toolbar>
+      <h5>Point History</h5>
+    </ion-toolbar>
+    <div class="ion-text-end">
+      <ion-button slot="end" fill="clear">
+        <a href="./point-lists/">View all >></a>
+      </ion-button>
+    </div>
+    <ion-grid size="100%">
+      <ion-row>
+        <ion-col>
+         <b>Date</b>
+        </ion-col>
+        <ion-col>
+          <b>Details</b>
+        </ion-col>
+        <ion-col>
+          <b>Points</b>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+         02 Aug 2021
+        </ion-col>
+        <ion-col>
+          Puchasing something
+        </ion-col>
+        <ion-col>
+          30
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </div>
 

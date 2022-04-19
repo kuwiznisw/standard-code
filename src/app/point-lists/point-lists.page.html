@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="danger">
-    <ion-title>Voucher Details</ion-title>
+    <ion-title>Point History</ion-title>
     <ion-button color="light" fill="clear" [routerLink]="['/pnv']"  slot="start">
       <ion-icon name="chevron-back-outline"></ion-icon>
         Back
@@ -31,22 +31,39 @@
 </ion-header>
 
 <ion-content color="flash-white">
+  <ion-card>
+    <ion-card-header>
+      Total Point
+    </ion-card-header>
+    <ion-card-subtitle>
+      200
+    </ion-card-subtitle>
+  </ion-card>
   <br>
-  <div class="ion-text-start">
-    <img src="../../assets/images/vd1.png" alt="" >
-  </div>
-  <div class="title">
-    <h6> <b>30% OFF</b> </h6>
-    <p>Valid until 30 August 2023</p>
-  </div>
-  <h5>_____________________________________</h5>
-  <p><b> Description :</b></p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa explicabo excepturi consequuntur.
-    Similique vitae harum modi eos sit nulla facere repellat delectus temporibus hic doloremque velit quidem, reiciendis eius veritatis.</p>
-
-
-
-
+  <ion-grid size="100%">
+    <ion-row>
+      <ion-col>
+       <b>Date</b>
+      </ion-col>
+      <ion-col>
+        <b>Details</b>
+      </ion-col>
+      <ion-col>
+        <b>Points</b>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+       02 Aug 2021
+      </ion-col>
+      <ion-col>
+        Puchasing something
+      </ion-col>
+      <ion-col>
+        30
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 <ion-footer>
   <ion-toolbar>
