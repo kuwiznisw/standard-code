@@ -55,8 +55,29 @@ const routes: Routes = [
     path: 'voucher-list',
     loadChildren: () => import('./voucher-list/voucher-list.module').then( m => m.VoucherListPageModule)
   },  {
+<<<<<<< HEAD
+    path: 'pre-order',
+    loadChildren: () => import('./pre-order/pre-order.module').then( m => m.PreOrderPageModule)
+  },
+  {
+    path: 'reward-details',
+    loadChildren: () => import('./reward-details/reward-details.module').then( m => m.RewardDetailsPageModule)
+  },
+  {
+    path: 'voucher-details',
+    loadChildren: () => import('./voucher-details/voucher-details.module').then( m => m.VoucherDetailsPageModule)
+  },
+  {
+    path: 'point-lists',
+    loadChildren: () => import('./point-lists/point-lists.module').then( m => m.PointListsPageModule)
+  },
+  {
+    path: 'geolocation',
+    loadChildren: () => import('./geolocation/geolocation.module').then( m => m.GeolocationPageModule)
+=======
     path: 'edit-profile',
     loadChildren: () => import('./edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
+>>>>>>> fa9982429835c9be28b1c0e2ad7a454d487e2d36
   },
 
 ];
