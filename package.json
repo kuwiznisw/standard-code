@@ -65,9 +65,7 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-geolocation": {
-        "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
-      }
+      "cordova-plugin-geolocation": {}
     }
   }
 }
