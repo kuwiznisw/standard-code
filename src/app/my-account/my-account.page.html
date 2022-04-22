@@ -41,7 +41,7 @@
   </ion-segment>
 
   <div [ngSwitch]="account">
-    <div *ngSwitchDefault="'MEMBER E-CARD'">
+    <div *ngSwitchCase="'MEMBER E-CARD'">
       <div style="margin-bottom:20px">
 
       </div>
@@ -176,7 +176,8 @@
       </ion-row>
       </ion-card>
       <div class="ion-text-center">
-      <ion-button color="danger" href="./edit-profile/">
+      <!--<ion-button color="danger" href="./edit-profile/">-->
+        <ion-button color="danger" [routerLink]="['/edit-profile']">
         Edit Profile
       </ion-button>
       </div>
@@ -186,7 +187,7 @@
 </ion-content>
 <ion-footer>
   <ion-toolbar class="ion-text-center">
-    <ion-button fill="clear">
+    <!--<ion-button fill="clear">
       <a href="./home/"><img class="nav-bar-img" src="../../assets/icon/home-black.png" style="height: 45px; width: 50px;" alt=""></a>
     </ion-button>
     <ion-button fill="clear">
@@ -197,6 +198,18 @@
     </ion-button>
     <ion-button fill="clear">
       <a href="./location/"><img class="nav-bar-img" src="../../assets/icon/location-black.png"  style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>-->
+    <ion-button fill="clear" [routerLink]="['/home']">
+      <img class="nav-bar-img" src="../../assets/icon/home-black.png" style="height: 45px; width: 50px;" alt="">
+    </ion-button>
+    <ion-button fill="clear" [routerLink]="['/my-account']">
+      <img class="nav-bar-img" src="../../assets/icon/myaccount-red.png"  style="height: 45px; width: 50px;" alt="">
+    </ion-button>
+    <ion-button fill="clear" [routerLink]="['/promotions']">
+      <img class="nav-bar-img" src="../../assets/icon/promotions-black.png"  style="height: 45px; width: 50px;" alt="">
+    </ion-button>
+    <ion-button fill="clear" [routerLink]="['/location']">
+      <img class="nav-bar-img" src="../../assets/icon/location-black.png"  style="height: 45px; width: 50px;" alt="">
     </ion-button>
   </ion-toolbar>
 
