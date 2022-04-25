@@ -30,7 +30,20 @@
 </ion-header>
 
 <ion-content color="flash-white">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1756488163846!2d101.58400811373563!3d3.0475767546210295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d801160e8b9%3A0xa407924cbbbace95!2sSenwave%20Retail%20Solutions%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1649731795529!5m2!1sen!2smy" width="365" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ <div class="map-wrapper">
+    <div id="map_center">
+      <img src="assets/icon/location-marker.png" />
+    </div>
+    <div #map id="map"></div>
+  </div>
+  <ion-toolbar>
+    <div class="ion-text-center"> <ion-button color="danger" (click)="loadMap()" fill="clear">
+      <ion-icon name="locate"></ion-icon>
+     &nbsp; My location
+    </ion-button>
+  </div>
+  </ion-toolbar>
+
   <ion-searchbar showCancelButton="focus"></ion-searchbar>
   <div class="ion-card">
   <ion-card>
@@ -53,16 +66,10 @@
       <div class="ion-text-end">
         <a href="https://goo.gl/maps/N9bLEnZmdym1NaVM9">
           <ion-button fill="clear">
-          <ion-icon color="" name="navigate-sharp"></ion-icon>
+          <ion-icon color="danger" name="navigate-sharp"></ion-icon>
         </ion-button>
         </a>
       </div>
-    </ion-card-subtitle>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>Location 3</ion-card-header>
-    <ion-card-subtitle>
-      The address of Location 3
     </ion-card-subtitle>
   </ion-card>
 </div>
