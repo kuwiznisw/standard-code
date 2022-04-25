@@ -23,5 +23,4 @@ export class TncPage implements OnInit {
       this.friends = data;
     })
   }
-
 }
