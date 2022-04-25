@@ -8,19 +8,20 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TncPage implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.runHttp();
   }
 
-  friends : any = [];
-
+ friends: any = [];
   runHttp(){
     this.http.get('http://192.168.0.141:8080/blog/1')
     .subscribe(data => {
-      console.log(data); 
+      console.log(data);
       this.friends = data;
-    })
+    });
   }
+
 }
+
