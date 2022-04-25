@@ -56,10 +56,6 @@ const routes: Routes = [
     loadChildren: () => import('./voucher-list/voucher-list.module').then( m => m.VoucherListPageModule)
   },
   {
-    path: 'pre-order',
-    loadChildren: () => import('./pre-order/pre-order.module').then( m => m.PreOrderPageModule)
-  },
-  {
     path: 'reward-details',
     loadChildren: () => import('./reward-details/reward-details.module').then( m => m.RewardDetailsPageModule)
   },
