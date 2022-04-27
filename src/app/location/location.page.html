@@ -31,15 +31,22 @@
 
 <ion-content color="flash-white">
  <div class="map-wrapper">
+
     <div id="map_center">
-      <img src="assets/icon/location-marker.png" />
+      <img class="img-pin" src="assets/icon/location-marker.png" />
     </div>
+
     <div #map id="map"></div>
   </div>
   <ion-toolbar>
-    <div class="ion-text-center"> <ion-button color="danger" (click)="loadMap()" fill="clear">
+    <div class="ion-text-center"> <ion-button color="danger" (click)="loadMap()" fill="outline">
       <ion-icon name="locate"></ion-icon>
      &nbsp; My location
+    </ion-button>
+    &nbsp;
+    <ion-button color="danger" fill="outline" (click)="showNearbyResto()">
+      <ion-icon name="compass-outline"></ion-icon>
+     &nbsp; Nearby Me
     </ion-button>
   </div>
   </ion-toolbar>

@@ -41,7 +41,7 @@ export class GeolocationPage {
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
 
-      this.getAddressFromCoords(resp.coords.latitude, resp.coords.longitude);
+     // this.getAddressFromCoords(resp.coords.latitude, resp.coords.longitude);
 
       this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
 
@@ -50,7 +50,7 @@ export class GeolocationPage {
         this.latitude = this.map.center.lat();
         this.longitude = this.map.center.lng();
 
-        this.getAddressFromCoords(this.map.center.lat(), this.map.center.lng());
+    //    this.getAddressFromCoords(this.map.center.lat(), this.map.center.lng());
       });
 
     }).catch((error) => {
@@ -58,32 +58,4 @@ export class GeolocationPage {
     });
   }
 
-  getAddressFromCoords(lattitude, longitude) {
-    console.log('getAddressFromCoords ' + lattitude + ' ' + longitude);
-    const options: NativeGeocoderOptions = {
-      useLocale: true,
-      maxResults: 5
-    };
-
-    this.nativeGeocoder.reverseGeocode(lattitude, longitude, options)
-      .then((result: NativeGeocoderResult[]) => {
-        this.address = '';
-        const responseAddress = [];
-        for (const [key, value] of Object.entries(result[0])) {
-          if (value.length > 0)
-            {responseAddress.push(value);}
-
-        }
-        responseAddress.reverse();
-        for (const value of responseAddress) {
-          this.address += value + ', ';
-        }
-        this.address = this.address.slice(0, -2);
-      })
-      .catch((error: any) => {
-        this.address = 'Address Not Available!';
-      });
-
   }
-
-}
