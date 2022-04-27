@@ -6,13 +6,13 @@ import { FooterPage } from '../footer/footer.page';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-  
-  constructor(public footer : FooterPage) {
+
+  constructor(public footer: FooterPage) {
 
   }
 
   ngOnInit(){
-    
+
   }
 
   ionViewWillEnter(){

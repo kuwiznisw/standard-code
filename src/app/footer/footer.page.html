@@ -2,24 +2,24 @@
 
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="home" (click)="tabSelected(1)">
-      <img src="../../assets/icon/home-red.png" *ngIf="tabValue==1" alt="">
-      <img src="../../assets/icon/home-black.png" *ngIf="tabValue!=1" alt="">
+      <img src="../../assets/icon/home-red.png" *ngIf="tabValue ===1" alt="">
+      <img src="../../assets/icon/home-black.png" *ngIf="tabValue!==1" alt="">
     </ion-tab-button>
 
     <ion-tab-button tab="my-account" (click)="tabSelected(2)">
-      <img src="../../assets/icon/myaccount-red.png" *ngIf="tabValue==2" alt="">
-      <img src="../../assets/icon/myaccount-black.png" *ngIf="tabValue!=2" alt="">
+      <img src="../../assets/icon/myaccount-red.png" *ngIf="tabValue===2" alt="">
+      <img src="../../assets/icon/myaccount-black.png" *ngIf="tabValue!==2" alt="">
 
     </ion-tab-button>
 
     <ion-tab-button tab="promotions" (click)="tabSelected(3)">
-      <img src="../../assets/icon/promotions-red.png" *ngIf="tabValue==3" alt="">
-      <img src="../../assets/icon/promotions-black.png" *ngIf="tabValue!=3" alt="">
+      <img src="../../assets/icon/promotions-red.png" *ngIf="tabValue===3" alt="">
+      <img src="../../assets/icon/promotions-black.png" *ngIf="tabValue!==3" alt="">
     </ion-tab-button>
 
     <ion-tab-button tab="location" (click)="tabSelected(4)">
-      <img src="../../assets/icon/location-red.png" *ngIf="tabValue==4" alt="">
-      <img src="../../assets/icon/location-black.png" *ngIf="tabValue!=4" alt="">
+      <img src="../../assets/icon/location-red.png" *ngIf="tabValue===4" alt="">
+      <img src="../../assets/icon/location-black.png" *ngIf="tabValue!==4" alt="">
     </ion-tab-button>
   </ion-tab-bar>
 
