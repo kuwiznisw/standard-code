@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FooterPage } from '../footer/footer.page';
 @Component({
   selector: 'app-my-account',
   templateUrl: './my-account.page.html',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MyAccountPage implements OnInit {
   router: any;
   account: string = "MEMBER E-CARD";
+  footer: FooterPage;
   constructor() { 
   }
 
@@ -16,6 +17,10 @@ export class MyAccountPage implements OnInit {
 
   editProfile() {
     this.router.navigate(["./edit-profile"])
+  }
+
+  ionViewWillEnter(){
+    this.footer.tabSelected(2)
   }
 
 }
