@@ -59,7 +59,11 @@ export class GeolocationPage {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> 8f932fdb651b33bcaf77c7d4a7861218c85c5d40
 =======
   }
 >>>>>>> 8f932fdb651b33bcaf77c7d4a7861218c85c5d40

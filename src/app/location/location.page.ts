@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+=======
+// home.page.ts
+import { Component, ViewChild, ElementRef } from '@angular/core';
 =======
 // home.page.ts
 import { Component, ViewChild, ElementRef } from '@angular/core';
@@ -9,7 +13,11 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { NativeGeocoder, NativeGeocoderResult, NativeGeocoderOptions } from '@ionic-native/native-geocoder/ngx';
 
 declare let google;
->>>>>>> 8f932fdb651b33bcaf77c7d4a7861218c85c5d40
+
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { NativeGeocoder, NativeGeocoderResult, NativeGeocoderOptions } from '@ionic-native/native-geocoder/ngx';
+
+
 
 declare let google;
 @Component({
@@ -29,7 +37,7 @@ export class LocationPage {
   constructor(
     private geolocation: Geolocation,
     private nativeGeocoder: NativeGeocoder){
-  }
+
 
 
   ngOnInit() {
