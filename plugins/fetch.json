@@ -2,7 +2,7 @@
   "cordova-plugin-request-location-accuracy": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-request-location-accuracy@^2.3.0"
+      "id": "cordova-plugin-request-location-accuracy"
     },
     "is_top_level": true,
     "variables": {}
@@ -16,5 +16,13 @@
     "variables": {
       "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
     }
+  },
+  "cordova-plugin-nativegeocoder": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-nativegeocoder"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

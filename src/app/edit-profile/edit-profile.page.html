@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Edit Profile</ion-title>
+    <ion-button color="light" fill="clear" [routerLink]="['/my-account']"  slot="start">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+        Back
+    </ion-button>
+    <ion-button color="light" slot="end" fill="clear" id="alignment-button">
+      <ion-icon name="notifications-outline"></ion-icon>
+     </ion-button>
+     <ion-popover trigger="alignment-button" side="bottom">
+       <ng-template>
+         <ion-content color="flash-white">
+          <ion-list>
+            <ion-item>
+             <ion-label>
+               Notification 1
+             </ion-label>
+            </ion-item>
+            <ion-item>
+             <ion-label>
+               Notification 2
+             </ion-label>
+           </ion-item>
+
+          </ion-list>
+         </ion-content>
+       </ng-template>
+     </ion-popover>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="img">
+  
+  <img style="border-radius: 45px; width: 30vw;height: 30vw;" src="../../assets/images/profile-picture.png" alt="">
+ 
+  </div>
+  <ion-item>
+    <ion-label position="floating">Name:</ion-label>
+    <ion-input value="Ali Baba"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email:</ion-label>
+    <ion-input value="alibaba@gmail.com"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Phone Number:</ion-label>
+    <ion-input value="0123456789"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Address:</ion-label>
+    <ion-textarea  value="No. 11, Jalan Astana 5/KU2, Bandar Bukit Raja"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Zip Code:</ion-label>
+    <ion-input value="41050"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">City:</ion-label>
+    <ion-input value="Klang"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>State</ion-label>
+    <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Selangor" value="Selangor">
+      <ion-select-option value="Perlis">Perlis</ion-select-option>
+      <ion-select-option value="Kedah">Kedah</ion-select-option>
+      <ion-select-option value="Pulau Pinang">Pulau Pinang</ion-select-option>
+      <ion-select-option value="Perak">Perak</ion-select-option>
+      <ion-select-option value="Kelantan">Kelantan</ion-select-option>
+      <ion-select-option value="Terengganu">Terengganu</ion-select-option>
+      <ion-select-option value="Pahang">Pahang</ion-select-option>
+      <ion-select-option value="Selangor">Selangor</ion-select-option>
+      <ion-select-option value="Kuala Lumpur">Kuala Lumpur</ion-select-option>
+      <ion-select-option value="Putrajaya">Putrajaya</ion-select-option>
+      <ion-select-option value="Negeri Sembilan">Negeri Sembilan</ion-select-option>
+      <ion-select-option value="Melaka">Melaka</ion-select-option>
+      <ion-select-option value="Johor">Johor</ion-select-option>
+      <ion-select-option value="Sarawak">Sarawak</ion-select-option>
+      <ion-select-option value="Sabah">Sabah</ion-select-option>
+      <ion-select-option value="Labuan">Labuan</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <div class="ion-text-center button">
+    <ion-button color="danger" href="./my-account/">
+      Edit Profile
+    </ion-button>
+    </div>
+</ion-content>

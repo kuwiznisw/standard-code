@@ -29,12 +29,165 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="flash-white">
-  
+<ion-content color="flash-white" [fullscreen]="true">
+  <ion-segment style="background-color: #edecec;"scrollable [(ngModel)]="account" mode="md">
+    <ion-segment-button value="MEMBER E-CARD">
+      <ion-label>MEMBER E-CARD</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="DETAIL">
+      <ion-label>DETAIL</ion-label>
+    </ion-segment-button>
+
+  </ion-segment>
+
+  <div [ngSwitch]="account">
+    <div *ngSwitchCase="'MEMBER E-CARD'">
+      <div style="margin-bottom:20px">
+
+      </div>
+      <div class="e-card" style="margin-left: 10%; margin-right: 10%;">
+      <ion-grid class="ion-padding">
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <img src="../../assets/images/sample-logo.png" alt="" style="height: 60px;width:60px;"><br>
+            <span style="font-family: Bahnschrift SemiBold;">Company Name</span>
+          </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: 5%;">
+          <ion-col class="ion-text-center">
+            <img style="border-radius: 45px; width: 30vw;height: 30vw;" src="../../assets/images/profile-picture.png" alt="">
+          </ion-col>
+        </ion-row>
+
+        <ion-row style="margin-top: 2%;">
+          <ion-col class="ion-text-center">
+            <h5>
+              <span style="text-transform: uppercase; font-family: Nirmala UI;">ALI BABA</span>
+            </h5>
+
+          </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: 5%;">
+          <ion-col class="ion-text-center">
+          <span style="font-family: MV Boli">Member Card</span>
+          </ion-col>
+        </ion-row>
+
+
+        <div class="card-detail">
+        <!--<ion-row style="background-color: #F7B5CD;">-->
+          <ion-row style="color:black!important;">
+            <ion-col size="5">
+              <span style="font-size: 3.5vw;font-weight: bold;">Phone Number</span>
+            </ion-col>
+            <ion-col>
+              <span style="font-size: 3.5vw;">: 0123456789</span>
+            </ion-col>
+          </ion-row>
+          <ion-row style="color:black!important;">
+            <ion-col size="5">
+              <span style="font-size: 3.5vw;font-weight: bold;">Email</span>
+            </ion-col>
+            <ion-col>
+              <span style="font-size: 3.5vw; word-wrap: break-word;">: alibaba@gmail.com</span>
+            </ion-col>
+          </ion-row>
+        </div>
+          <!--</ion-row>-->
+          <ion-row style="margin-top: 10%;">
+          <ion-col class="ion-text-center">
+            <img src ="../../assets/images/barcode.png" alt="" style="height:50px">
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+      </div>
+    </div>
+    <div *ngSwitchCase="'DETAIL'">
+      <div class="detail">
+        <ion-card>
+      <ion-row>
+        <ion-col>
+          <p class="label">Name</p>
+          <p class="info">Ali Baba</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">Phone Number</p>
+          <p class="info">0123456789</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Status</p>
+          <p class="info">Active</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">Member Type</p>
+          <p class="info">Free Member</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Email</p>
+          <p class="info">alibaba@gmail.com</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Address</p>
+          <p class="info">No. 11, Jalan Astana 5/KU2, Bandar Bukit Raja</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Zip Code</p>
+          <p class="info">41050</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">City</p>
+          <p class="info">Klang</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">State</p>
+          <p class="info">Selangor</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">IC Number</p>
+          <p class="info">950112108142</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">Date of Birth</p>
+          <p class="info">12-01-1995</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class="label">Gender</p>
+          <p class="info">Male</p>
+        </ion-col>
+        <ion-col>
+          <p class="label">ID</p>
+          <p class="info">42983</p>
+        </ion-col>
+      </ion-row>
+      </ion-card>
+      <div class="ion-text-center">
+      <!--<ion-button color="danger" href="./edit-profile/">-->
+        <ion-button color="danger" [routerLink]="['/edit-profile']">
+        Edit Profile
+      </ion-button>
+      </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
 <ion-footer>
-  <ion-toolbar>
-    <ion-button fill="clear">
+  <ion-toolbar class="ion-text-center">
+    <!--<ion-button fill="clear">
       <a href="./home/"><img class="nav-bar-img" src="../../assets/icon/home-black.png" style="height: 45px; width: 50px;" alt=""></a>
     </ion-button>
     <ion-button fill="clear">
@@ -45,6 +198,18 @@
     </ion-button>
     <ion-button fill="clear">
       <a href="./location/"><img class="nav-bar-img" src="../../assets/icon/location-black.png"  style="height: 45px; width: 50px;" alt=""></a>
+    </ion-button>-->
+    <ion-button fill="clear" [routerLink]="['/home']">
+      <img class="nav-bar-img" src="../../assets/icon/home-black.png" style="height: 45px; width: 50px;" alt="">
+    </ion-button>
+    <ion-button fill="clear" [routerLink]="['/my-account']">
+      <img class="nav-bar-img" src="../../assets/icon/myaccount-red.png"  style="height: 45px; width: 50px;" alt="">
+    </ion-button>
+    <ion-button fill="clear" [routerLink]="['/promotions']">
+      <img class="nav-bar-img" src="../../assets/icon/promotions-black.png"  style="height: 45px; width: 50px;" alt="">
+    </ion-button>
+    <ion-button fill="clear" [routerLink]="['/location']">
+      <img class="nav-bar-img" src="../../assets/icon/location-black.png"  style="height: 45px; width: 50px;" alt="">
     </ion-button>
   </ion-toolbar>
 
