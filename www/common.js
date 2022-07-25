@@ -1,6 +1,178 @@
 "use strict";
 (self["webpackChunkapp"] = self["webpackChunkapp"] || []).push([["common"],{
 
+<<<<<<< HEAD
+/***/ 67:
+/*!***************************************!*\
+  !*** ./src/app/footer/footer.page.ts ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FooterPage": () => (/* binding */ FooterPage)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _footer_page_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.page.html?ngResource */ 5298);
+/* harmony import */ var _footer_page_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.page.scss?ngResource */ 9939);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 3184);
+
+
+
+
+
+let FooterPage = class FooterPage {
+    constructor() {
+        this.tabValue = 0;
+    }
+    tabSelected(value) {
+        this.tabValue = value;
+    }
+};
+FooterPage.ctorParameters = () => [];
+FooterPage = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Component)({
+        selector: 'app-footer',
+        template: _footer_page_html_ngResource__WEBPACK_IMPORTED_MODULE_0__,
+        styles: [_footer_page_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__]
+    }),
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Injectable)({
+        providedIn: 'root' // just before your class
+    })
+], FooterPage);
+
+
+
+/***/ }),
+
+/***/ 2003:
+/*!*********************************************!*\
+  !*** ./src/app/home/home-routing.module.ts ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HomePageRoutingModule": () => (/* binding */ HomePageRoutingModule)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 2816);
+/* harmony import */ var _home_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.page */ 2267);
+
+
+
+
+const routes = [
+    {
+        path: '',
+        component: _home_page__WEBPACK_IMPORTED_MODULE_0__.HomePage,
+    }
+];
+let HomePageRoutingModule = class HomePageRoutingModule {
+};
+HomePageRoutingModule = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.NgModule)({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule.forChild(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterModule]
+    })
+], HomePageRoutingModule);
+
+
+
+/***/ }),
+
+/***/ 3467:
+/*!*************************************!*\
+  !*** ./src/app/home/home.module.ts ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HomePageModule": () => (/* binding */ HomePageModule)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 6362);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic/angular */ 3819);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ 587);
+/* harmony import */ var _home_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.page */ 2267);
+/* harmony import */ var _home_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home-routing.module */ 2003);
+
+
+
+
+
+
+
+let HomePageModule = class HomePageModule {
+};
+HomePageModule = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.NgModule)({
+        imports: [
+            _angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormsModule,
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_6__.IonicModule,
+            _home_routing_module__WEBPACK_IMPORTED_MODULE_1__.HomePageRoutingModule
+        ],
+        declarations: [_home_page__WEBPACK_IMPORTED_MODULE_0__.HomePage]
+    })
+], HomePageModule);
+
+
+
+/***/ }),
+
+/***/ 2267:
+/*!***********************************!*\
+  !*** ./src/app/home/home.page.ts ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HomePage": () => (/* binding */ HomePage)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _home_page_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.page.html?ngResource */ 3853);
+/* harmony import */ var _home_page_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.page.scss?ngResource */ 1020);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _footer_footer_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../footer/footer.page */ 67);
+
+
+
+
+
+let HomePage = class HomePage {
+    constructor(footer) {
+        this.footer = footer;
+    }
+    ngOnInit() {
+    }
+    ionViewWillEnter() {
+        this.footer.tabSelected(1);
+        console.log(this.footer);
+        console.log('ionViewWillEnter');
+    }
+};
+HomePage.ctorParameters = () => [
+    { type: _footer_footer_page__WEBPACK_IMPORTED_MODULE_2__.FooterPage }
+];
+HomePage = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_4__.Component)({
+        selector: 'app-home',
+        template: _home_page_html_ngResource__WEBPACK_IMPORTED_MODULE_0__,
+        styles: [_home_page_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__]
+    })
+], HomePage);
+
+
+
+/***/ }),
+
+=======
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /***/ 2621:
 /*!***********************************************!*\
   !*** ./src/app/promotions/promotions.page.ts ***!
@@ -251,7 +423,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "a": () => (/* binding */ attachComponent),
 /* harmony export */   "d": () => (/* binding */ detachComponent)
 /* harmony export */ });
+<<<<<<< HEAD
+/* harmony import */ var C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+=======
 /* harmony import */ var C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /* harmony import */ var _helpers_6e1e5b65_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers-6e1e5b65.js */ 8345);
 
 
@@ -261,7 +437,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const attachComponent = /*#__PURE__*/function () {
+<<<<<<< HEAD
+  var _ref = (0,C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (delegate, container, component, cssClasses, componentProps, inline) {
+=======
   var _ref = (0,C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (delegate, container, component, cssClasses, componentProps, inline) {
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     if (delegate) {
       return delegate.attachViewToDom(container, component, componentProps, cssClasses);
     }
@@ -308,7 +488,11 @@ const CoreDelegate = () => {
   let Reference;
 
   const attachViewToDom = /*#__PURE__*/function () {
+<<<<<<< HEAD
+    var _ref2 = (0,C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (parentElement, userComponent, userComponentProps = {}, cssClasses = []) {
+=======
     var _ref2 = (0,C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (parentElement, userComponent, userComponentProps = {}, cssClasses = []) {
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
       BaseComponent = parentElement;
       /**
        * If passing in a component via the `component` props
@@ -997,7 +1181,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "h": () => (/* binding */ hostContext),
 /* harmony export */   "o": () => (/* binding */ openURL)
 /* harmony export */ });
+<<<<<<< HEAD
+/* harmony import */ var C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+=======
 /* harmony import */ var C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 
 /*!
@@ -1036,7 +1224,11 @@ const getClassMap = classes => {
 const SCHEME = /^[a-z][a-z0-9+\-.]*:/;
 
 const openURL = /*#__PURE__*/function () {
+<<<<<<< HEAD
+  var _ref = (0,C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (url, ev, direction, animation) {
+=======
   var _ref = (0,C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (url, ev, direction, animation) {
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     if (url != null && url[0] !== '#' && !SCHEME.test(url)) {
       const router = document.querySelector('ion-router');
 
@@ -1061,6 +1253,29 @@ const openURL = /*#__PURE__*/function () {
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ 9939:
+/*!****************************************************!*\
+  !*** ./src/app/footer/footer.page.scss?ngResource ***!
+  \****************************************************/
+/***/ ((module) => {
+
+module.exports = "img {\n  width: 4rem;\n  max-width: 150% !important;\n}\n\nion-tab-button {\n  opacity: 0.5;\n}\n\nion-tab-button.tab-selected {\n  opacity: 1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBQVksMEJBQUE7QUFFaEI7O0FBQUE7RUFDQSxZQUFBO0FBR0E7O0FBREE7RUFDQSxVQUFBO0FBSUEiLCJmaWxlIjoiZm9vdGVyLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImltZ3tcclxuICAgIHdpZHRoOiA0cmVtO21heC13aWR0aDogMTUwJSAhaW1wb3J0YW50O1xyXG59XHJcbmlvbi10YWItYnV0dG9uIHtcclxub3BhY2l0eTogMC41O1xyXG59XHJcbmlvbi10YWItYnV0dG9uLnRhYi1zZWxlY3RlZCB7XHJcbm9wYWNpdHk6IDE7XHJcbn0iXX0= */";
+
+/***/ }),
+
+/***/ 1020:
+/*!************************************************!*\
+  !*** ./src/app/home/home.page.scss?ngResource ***!
+  \************************************************/
+/***/ ((module) => {
+
+module.exports = "#container {\n  text-align: center;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n#container strong {\n  font-size: 20px;\n  line-height: 26px;\n}\n\n#container p {\n  font-size: 16px;\n  line-height: 22px;\n  color: #8c8c8c;\n  margin: 0;\n}\n\n#container a {\n  text-decoration: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7RUFFQSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxRQUFBO0VBQ0EsUUFBQTtFQUNBLDJCQUFBO0FBQUY7O0FBR0E7RUFDRSxlQUFBO0VBQ0EsaUJBQUE7QUFBRjs7QUFHQTtFQUNFLGVBQUE7RUFDQSxpQkFBQTtFQUVBLGNBQUE7RUFFQSxTQUFBO0FBRkY7O0FBS0E7RUFDRSxxQkFBQTtBQUZGIiwiZmlsZSI6ImhvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2NvbnRhaW5lciB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG5cclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgbGVmdDogMDtcclxuICByaWdodDogMDtcclxuICB0b3A6IDUwJTtcclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbn1cclxuXHJcbiNjb250YWluZXIgc3Ryb25nIHtcclxuICBmb250LXNpemU6IDIwcHg7XHJcbiAgbGluZS1oZWlnaHQ6IDI2cHg7XHJcbn1cclxuXHJcbiNjb250YWluZXIgcCB7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG4gIGxpbmUtaGVpZ2h0OiAyMnB4O1xyXG5cclxuICBjb2xvcjogIzhjOGM4YztcclxuXHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG4jY29udGFpbmVyIGEge1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufSJdfQ== */";
+
+/***/ }),
+
+=======
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /***/ 3263:
 /*!************************************************************!*\
   !*** ./src/app/promotions/promotions.page.scss?ngResource ***!
@@ -1071,13 +1286,40 @@ module.exports = "ion-col {\n  border-radius: 35px !important;\n  overflow: hidd
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ 5298:
+/*!****************************************************!*\
+  !*** ./src/app/footer/footer.page.html?ngResource ***!
+  \****************************************************/
+/***/ ((module) => {
+
+module.exports = "<ion-tabs>\r\n\r\n  <ion-tab-bar slot=\"bottom\">\r\n    <ion-tab-button tab=\"home\" (click)=\"tabSelected(1)\">\r\n      <img src=\"../../assets/icon/home-red.png\" *ngIf=\"tabValue===1\" alt=\"\">\r\n      <img src=\"../../assets/icon/home-black.png\" *ngIf=\"tabValue!==1\" alt=\"\">\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"my-account\" (click)=\"tabSelected(2)\">\r\n      <img src=\"../../assets/icon/myaccount-red.png\" *ngIf=\"tabValue===2\" alt=\"\">\r\n      <img src=\"../../assets/icon/myaccount-black.png\" *ngIf=\"tabValue!==2\" alt=\"\">\r\n\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"promotions\" (click)=\"tabSelected(3)\">\r\n      <img src=\"../../assets/icon/promotions-red.png\" *ngIf=\"tabValue===3\" alt=\"\">\r\n      <img src=\"../../assets/icon/promotions-black.png\" *ngIf=\"tabValue!==3\" alt=\"\">\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"location\" (click)=\"tabSelected(4)\">\r\n      <img src=\"../../assets/icon/location-red.png\" *ngIf=\"tabValue===4\" alt=\"\">\r\n      <img src=\"../../assets/icon/location-black.png\" *ngIf=\"tabValue!==4\" alt=\"\">\r\n    </ion-tab-button>\r\n  </ion-tab-bar>\r\n\r\n</ion-tabs>\r\n";
+
+/***/ }),
+
+/***/ 3853:
+/*!************************************************!*\
+  !*** ./src/app/home/home.page.html?ngResource ***!
+  \************************************************/
+/***/ ((module) => {
+
+module.exports = "<ion-header [translucent]=\"true\">\r\n  <ion-toolbar color=\"danger\">\r\n    <ion-title>\r\n      Home\r\n    </ion-title>\r\n    <ion-buttons slot=\"start\">\r\n<ion-menu-button menu=\"main-menu\"></ion-menu-button>\r\n    </ion-buttons>\r\n    <ion-button color=\"light\" slot=\"end\" fill=\"clear\" id=\"alignment-button\">\r\n      <ion-icon name=\"notifications-outline\"></ion-icon>\r\n     </ion-button>\r\n     <ion-popover trigger=\"alignment-button\" side=\"bottom\">\r\n       <ng-template>\r\n         <ion-content>\r\n           <ion-list>\r\n             <ion-item>\r\n              <ion-label>\r\n                Notification 1\r\n              </ion-label>\r\n             </ion-item>\r\n             <ion-item>\r\n              <ion-label>\r\n                Notification 2\r\n              </ion-label>\r\n            </ion-item>\r\n\r\n           </ion-list>\r\n         </ion-content>\r\n       </ng-template>\r\n     </ion-popover>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content color=\"flash-white\"[fullscreen]=\"true\">\r\n\r\n  <div id=\"container\">\r\n    <strong>Ready to create an app?</strong>\r\n    <p>Start with Ionic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://ionicframework.com/docs/components\">UI Components</a></p>\r\n  </div>\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-toolbar>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./home/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/home-red.png\" style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./my-account/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/myaccount-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./promotions/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/promotions-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./location/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/location-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n  </ion-toolbar>\r\n\r\n\r\n  </ion-footer>\r\n";
+
+/***/ }),
+
+=======
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /***/ 6304:
 /*!************************************************************!*\
   !*** ./src/app/promotions/promotions.page.html?ngResource ***!
   \************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
+module.exports = "<ion-header translucent=\"true\">\r\n  <ion-toolbar color=\"danger\" mode=\"ios\">\r\n    <ion-title>Promotions</ion-title>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button menu=\"main-menu\"></ion-menu-button>\r\n          </ion-buttons>\r\n          <ion-button color=\"light\" slot=\"end\" fill=\"clear\" id=\"alignment-button\">\r\n           <ion-icon name=\"notifications-outline\"></ion-icon>\r\n          </ion-button>\r\n          <ion-popover trigger=\"alignment-button\" side=\"bottom\">\r\n            <ng-template>\r\n              <ion-content>\r\n                <ion-list>\r\n                  <ion-item>\r\n                   <ion-label>\r\n                     Notification 1\r\n                   </ion-label>\r\n                  </ion-item>\r\n                  <ion-item>\r\n                   <ion-label>\r\n                     Notification 2\r\n                   </ion-label>\r\n                 </ion-item>\r\n\r\n                </ion-list>\r\n              </ion-content>\r\n            </ng-template>\r\n          </ion-popover>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content color=\"flash-white\" fullscreen=\"\">\r\n<br>\r\n<ion-label>\r\n    <h1 class=\"list-promo\">List of Promotions</h1>\r\n  <br>\r\n  <br>\r\n</ion-label>\r\n<ion-grid fixed>\r\n  <ion-row>\r\n  <ion-col>\r\n      <ion-card color=\"\">\r\n        <ion-card-header>\r\n          <img src=\"../../assets/images/02.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n        </ion-card-header>\r\n        <ion-card-subtitle>\r\n          <p>PROMOTION 1</p>\r\n          <div class=\"ion-text-end\">\r\n            <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n            <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n            </ion-button>\r\n          </a>\r\n          </div>\r\n        </ion-card-subtitle>\r\n      </ion-card>\r\n  </ion-col>\r\n  <ion-col>\r\n    <div>\r\n    <ion-card color=\"\">\r\n      <ion-card-header>\r\n      <img src=\"../../assets/images/01.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n      </ion-card-header>\r\n      <ion-card-subtitle>\r\n        <p>PROMOTION 2</p>\r\n        <div class=\"ion-text-end\">\r\n          <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n          <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n          </ion-button>\r\n        </a>\r\n        </div>\r\n      </ion-card-subtitle>\r\n    </ion-card>\r\n    </div>\r\n  </ion-col>\r\n  </ion-row>\r\n  <ion-row>\r\n    <ion-col>\r\n        <ion-card color=\"\">\r\n          <ion-card-header>\r\n          <img src=\"../../assets/images/03.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n          </ion-card-header>\r\n          <ion-card-subtitle>\r\n            <p>PROMOTION 3</p>\r\n            <div class=\"ion-text-end\">\r\n              <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n              <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n              </ion-button>\r\n            </a>\r\n            </div>\r\n          </ion-card-subtitle>\r\n        </ion-card>\r\n    </ion-col>\r\n    <ion-col>\r\n      <ion-card color=\"\">\r\n        <ion-card-header>\r\n          <img src=\"../../assets/images/05.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n        </ion-card-header>\r\n        <ion-card-subtitle>\r\n          <p>PROMOTION 4</p>\r\n          <div class=\"ion-text-end\">\r\n            <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n            <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n            </ion-button>\r\n          </a>\r\n          </div>\r\n        </ion-card-subtitle>\r\n      </ion-card>\r\n    </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col col-12 col-xl-2 col-lg-3 col-md-4>\r\n          <ion-card color=\"\">\r\n            <ion-card-header>\r\n              <img src=\"../../assets/images/02.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n            </ion-card-header>\r\n            <ion-card-subtitle>\r\n              <p>PROMOTION 5</p>\r\n              <div class=\"ion-text-end\">\r\n                <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n                  <br>\r\n                  <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n                </ion-button>\r\n              </a>\r\n              </div>\r\n            </ion-card-subtitle>\r\n          </ion-card>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-card color=\"\">\r\n          <ion-card-header>\r\n          <img src=\"../../assets/images/01.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n          </ion-card-header>\r\n          <ion-card-subtitle>\r\n            <p>PROMOTION 6</p>\r\n            <div class=\"ion-text-end\">\r\n              <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n              <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n              </ion-button>\r\n            </a>\r\n            </div>\r\n          </ion-card-subtitle>\r\n        </ion-card>\r\n      </ion-col>\r\n      </ion-row>\r\n</ion-grid>\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-toolbar color=\"light\">\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./home/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/home-black.png\" style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./my-account/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/myaccount-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./promotions/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/promotions-red.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./location/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/location-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n  </ion-toolbar>\r\n\r\n\r\n  </ion-footer>\r\n";
+=======
 module.exports = "<ion-header translucent=\"true\">\r\n  <ion-toolbar color=\"danger\" mode=\"ios\">\r\n    <ion-title>Promotions</ion-title>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button menu=\"main-menu\"></ion-menu-button>\r\n          </ion-buttons>\r\n          <ion-button color=\"light\" slot=\"end\" fill=\"clear\" id=\"alignment-button\">\r\n           <ion-icon name=\"notifications-outline\"></ion-icon>\r\n          </ion-button>\r\n          <ion-popover trigger=\"alignment-button\" side=\"bottom\">\r\n            <ng-template>\r\n              <ion-content>\r\n                <ion-list>\r\n                  <ion-item>\r\n                   <ion-label>\r\n                     Notification 1\r\n                   </ion-label>\r\n                  </ion-item>\r\n                  <ion-item>\r\n                   <ion-label>\r\n                     Notification 2\r\n                   </ion-label>\r\n                 </ion-item>\r\n\r\n                </ion-list>\r\n              </ion-content>\r\n            </ng-template>\r\n          </ion-popover>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content color=\"flash-white\" fullscreen=\"\">\r\n<br>\r\n<ion-label>\r\n    <h1 class=\"list-promo\">List of Promotions</h1>\r\n  <br>\r\n  <br>\r\n</ion-label>\r\n<ion-grid>\r\n  <ion-row>\r\n  <ion-col>\r\n      <ion-card color=\"\">\r\n        <ion-card-header>\r\n          <img src=\"../../assets/images/02.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n        </ion-card-header>\r\n        <ion-card-subtitle>\r\n          <p>PROMOTION 1</p>\r\n          <div class=\"ion-text-end\">\r\n            <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n            <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n            </ion-button>\r\n          </a>\r\n          </div>\r\n        </ion-card-subtitle>\r\n      </ion-card>\r\n  </ion-col>\r\n  <ion-col>\r\n    <ion-card color=\"\">\r\n      <ion-card-header>\r\n      <img src=\"../../assets/images/01.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n      </ion-card-header>\r\n      <ion-card-subtitle>\r\n        <p>PROMOTION 2</p>\r\n        <div class=\"ion-text-end\">\r\n          <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n          <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n          </ion-button>\r\n        </a>\r\n        </div>\r\n      </ion-card-subtitle>\r\n    </ion-card>\r\n  </ion-col>\r\n  </ion-row>\r\n  <ion-row>\r\n    <ion-col>\r\n        <ion-card color=\"\">\r\n          <ion-card-header>\r\n          <img src=\"../../assets/images/03.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n          </ion-card-header>\r\n          <ion-card-subtitle>\r\n            <p>PROMOTION 3</p>\r\n            <div class=\"ion-text-end\">\r\n              <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n              <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n              </ion-button>\r\n            </a>\r\n            </div>\r\n          </ion-card-subtitle>\r\n        </ion-card>\r\n    </ion-col>\r\n    <ion-col>\r\n      <ion-card color=\"\">\r\n        <ion-card-header>\r\n          <img src=\"../../assets/images/05.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n        </ion-card-header>\r\n        <ion-card-subtitle>\r\n          <p>PROMOTION 4</p>\r\n          <div class=\"ion-text-end\">\r\n            <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n            <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n            </ion-button>\r\n          </a>\r\n          </div>\r\n        </ion-card-subtitle>\r\n      </ion-card>\r\n    </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col col-12 col-xl-2 col-lg-3 col-md-4>\r\n          <ion-card color=\"\">\r\n            <ion-card-header>\r\n              <img src=\"../../assets/images/02.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n            </ion-card-header>\r\n            <ion-card-subtitle>\r\n              <p>PROMOTION 5</p>\r\n              <div class=\"ion-text-end\">\r\n                <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n                  <br>\r\n                  <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n                </ion-button>\r\n              </a>\r\n              </div>\r\n            </ion-card-subtitle>\r\n          </ion-card>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-card color=\"\">\r\n          <ion-card-header>\r\n          <img src=\"../../assets/images/01.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n          </ion-card-header>\r\n          <ion-card-subtitle>\r\n            <p>PROMOTION 6</p>\r\n            <div class=\"ion-text-end\">\r\n              <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n              <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n              </ion-button>\r\n            </a>\r\n            </div>\r\n          </ion-card-subtitle>\r\n        </ion-card>\r\n      </ion-col>\r\n      </ion-row>\r\n</ion-grid>\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-toolbar color=\"light\">\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./home/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/home-black.png\" style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./my-account/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/myaccount-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./promotions/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/promotions-red.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./location/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/location-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n  </ion-toolbar>\r\n\r\n\r\n  </ion-footer>\r\n";
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 /***/ })
 

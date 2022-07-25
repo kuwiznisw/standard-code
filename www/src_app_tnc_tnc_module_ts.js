@@ -90,15 +90,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TncPage": () => (/* binding */ TncPage)
 /* harmony export */ });
+<<<<<<< HEAD
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _tnc_page_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tnc.page.html?ngResource */ 7135);
+/* harmony import */ var _tnc_page_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tnc.page.scss?ngResource */ 7645);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ 8784);
+
+=======
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ 4929);
 /* harmony import */ var _tnc_page_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tnc.page.html?ngResource */ 7135);
 /* harmony import */ var _tnc_page_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tnc.page.scss?ngResource */ 7645);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 3184);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 
 
 
 let TncPage = class TncPage {
+<<<<<<< HEAD
+    constructor(http) {
+        this.http = http;
+        this.friends = [];
+    }
+    ngOnInit() {
+        this.runHttp();
+    }
+    runHttp() {
+        this.http.get('http://192.168.0.168:8080/blog/1')
+            .subscribe(data => {
+            console.log(data);
+            this.friends = data;
+        });
+    }
+};
+TncPage.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__.HttpClient }
+];
+TncPage = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_4__.Component)({
+=======
     constructor() { }
     ngOnInit() {
     }
@@ -106,6 +137,7 @@ let TncPage = class TncPage {
 TncPage.ctorParameters = () => [];
 TncPage = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
     (0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Component)({
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
         selector: 'app-tnc',
         template: _tnc_page_html_ngResource__WEBPACK_IMPORTED_MODULE_0__,
         styles: [_tnc_page_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__]
@@ -132,7 +164,11 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
   \**********************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
+module.exports = "<ion-header translucent=\"true\">\r\n  <ion-toolbar color=\"danger\" mode=\"ios\">\r\n    <ion-title>Terms and Conditions</ion-title>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button menu=\"main-menu\"></ion-menu-button>\r\n          </ion-buttons>\r\n          <ion-button color=\"light\" slot=\"end\" fill=\"clear\" id=\"alignment-button\">\r\n            <ion-icon name=\"notifications-outline\"></ion-icon>\r\n           </ion-button>\r\n           <ion-popover trigger=\"alignment-button\" side=\"bottom\">\r\n             <ng-template>\r\n               <ion-content>\r\n                 <ion-list>\r\n                   <ion-item>\r\n                    <ion-label>\r\n                      Notification 1\r\n                    </ion-label>\r\n                   </ion-item>\r\n                   <ion-item>\r\n                    <ion-label>\r\n                      Notification 2\r\n                    </ion-label>\r\n                  </ion-item>\r\n\r\n                 </ion-list>\r\n               </ion-content>\r\n             </ng-template>\r\n           </ion-popover>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content color=\"flash-white\">\r\n  <div>\r\n    <ion-card>\r\n      <ion-card-subtitle>\r\n        <ion-list *ngFor =\"let friend of friends\">\r\n          <br>\r\n          <ion-item>\r\n            <h5>{{friend.description}}</h5>\r\n          </ion-item>\r\n        </ion-list>\r\n      </ion-card-subtitle>\r\n    </ion-card>\r\n\r\n  </div>\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-toolbar color=\"light\">\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./home/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/home-black.png\" style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./my-account/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/myaccount-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./promotions/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/promotions-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./location/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/location-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n  </ion-toolbar>\r\n\r\n\r\n  </ion-footer>\r\n";
+=======
 module.exports = "<ion-header>\r\n  <ion-toolbar color=\"danger\">\r\n    <ion-title>Terms and Conditions</ion-title>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button menu=\"main-menu\"></ion-menu-button>\r\n          </ion-buttons>\r\n          <ion-button color=\"light\" slot=\"end\" fill=\"clear\" id=\"alignment-button\">\r\n            <ion-icon name=\"notifications-outline\"></ion-icon>\r\n           </ion-button>\r\n           <ion-popover trigger=\"alignment-button\" side=\"bottom\">\r\n             <ng-template>\r\n               <ion-content>\r\n                 <ion-list>\r\n                   <ion-item>\r\n                    <ion-label>\r\n                      Notification 1\r\n                    </ion-label>\r\n                   </ion-item>\r\n                   <ion-item>\r\n                    <ion-label>\r\n                      Notification 2\r\n                    </ion-label>\r\n                  </ion-item>\r\n\r\n                 </ion-list>\r\n               </ion-content>\r\n             </ng-template>\r\n           </ion-popover>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content color=\"flash-white\">\r\n\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-toolbar color=\"light\">\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./home/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/home-black.png\" style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./my-account/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/myaccount-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./promotions/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/promotions-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./location/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/location-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n  </ion-toolbar>\r\n\r\n\r\n  </ion-footer>\r\n";
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 /***/ })
 

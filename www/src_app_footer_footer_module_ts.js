@@ -21,8 +21,41 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
+<<<<<<< HEAD
+        path: 'footer',
+        component: _footer_page__WEBPACK_IMPORTED_MODULE_0__.FooterPage,
+        children: [
+            {
+                path: 'home',
+                loadChildren: () => __webpack_require__.e(/*! import() */ "common").then(__webpack_require__.bind(__webpack_require__, /*! ../home/home.module */ 3467)).then(m => m.HomePageModule)
+            },
+            {
+                path: 'my-account',
+                loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_my-account_my-account_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ../my-account/my-account.module */ 7796)).then(m => m.MyAccountPageModule)
+            },
+            {
+                path: 'promotions',
+                loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("common"), __webpack_require__.e("src_app_promotions_promotions_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ../promotions/promotions.module */ 225)).then(m => m.PromotionsPageModule)
+            },
+            {
+                path: 'location',
+                loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_location_location_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ../location/location.module */ 7718)).then(m => m.LocationPageModule)
+            },
+            {
+                path: '',
+                redirectTo: '/footer/home',
+                pathMatch: 'full'
+            }
+        ]
+    },
+    {
+        path: '',
+        redirectTo: '/footer/home',
+        pathMatch: 'full'
+=======
         path: '',
         component: _footer_page__WEBPACK_IMPORTED_MODULE_0__.FooterPage
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     }
 ];
 let FooterPageRoutingModule = class FooterPageRoutingModule {
@@ -78,6 +111,8 @@ FooterPageModule = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
 
 
 
+<<<<<<< HEAD
+=======
 /***/ }),
 
 /***/ 67:
@@ -134,6 +169,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 
 module.exports = "<ion-footer>\r\n  <ion-toolbar>\r\n    <ion-button fill=\"clear\">\r\n      <img src=\"../../assets/icon/house.png\" style=\"height: 30px; width: 30px;\" alt=\"\">\r\n    </ion-button>\r\n  </ion-toolbar>\r\n\r\n\r\n  </ion-footer>\r\n";
 
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /***/ })
 
 }]);

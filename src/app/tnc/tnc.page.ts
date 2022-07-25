@@ -16,7 +16,7 @@ export class TncPage implements OnInit {
 
  friends: any = [];
   runHttp(){
-    this.http.get('http://192.168.0.141:8080/blog/1')
+    this.http.get('http://192.168.0.168:8080/blog/1')
     .subscribe(data => {
       console.log(data);
       this.friends = data;

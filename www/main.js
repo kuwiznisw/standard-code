@@ -20,7 +20,11 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: 'home',
+<<<<<<< HEAD
+        loadChildren: () => __webpack_require__.e(/*! import() */ "common").then(__webpack_require__.bind(__webpack_require__, /*! ./home/home.module */ 3467)).then(m => m.HomePageModule)
+=======
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_home_home_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./home/home.module */ 3467)).then(m => m.HomePageModule)
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     },
     {
         path: '',
@@ -41,7 +45,11 @@ const routes = [
     },
     {
         path: 'footer',
+<<<<<<< HEAD
+        loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("common"), __webpack_require__.e("src_app_footer_footer_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./footer/footer.module */ 6444)).then(m => m.FooterPageModule)
+=======
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_footer_footer_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./footer/footer.module */ 6444)).then(m => m.FooterPageModule)
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     },
     {
         path: 'my-account',
@@ -49,11 +57,19 @@ const routes = [
     },
     {
         path: 'location',
+<<<<<<< HEAD
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_location_location_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./location/location.module */ 7718)).then(m => m.LocationPageModule)
+    },
+    {
+        path: 'home',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "common").then(__webpack_require__.bind(__webpack_require__, /*! ./home/home.module */ 3467)).then(m => m.HomePageModule)
+=======
         loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ionic-native_geolocation___ivy_ngcc___ngx_index_js"), __webpack_require__.e("src_app_location_location_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./location/location.module */ 7718)).then(m => m.LocationPageModule)
     },
     {
         path: 'home',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_home_home_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./home/home.module */ 3467)).then(m => m.HomePageModule)
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     },
     {
         path: 'about-us',
@@ -72,12 +88,33 @@ const routes = [
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_voucher-list_voucher-list_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./voucher-list/voucher-list.module */ 2037)).then(m => m.VoucherListPageModule)
     },
     {
+<<<<<<< HEAD
+        path: 'reward-details',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_reward-details_reward-details_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./reward-details/reward-details.module */ 3106)).then(m => m.RewardDetailsPageModule)
+    },
+    {
+        path: 'voucher-details',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_voucher-details_voucher-details_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./voucher-details/voucher-details.module */ 1131)).then(m => m.VoucherDetailsPageModule)
+    },
+    {
+        path: 'point-lists',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_point-lists_point-lists_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./point-lists/point-lists.module */ 5364)).then(m => m.PointListsPageModule)
+    },
+    {
+        path: 'geolocation',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_geolocation_geolocation_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./geolocation/geolocation.module */ 8463)).then(m => m.GeolocationPageModule)
+    },
+    {
+        path: 'edit-profile',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_edit-profile_edit-profile_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./edit-profile/edit-profile.module */ 1241)).then(m => m.EditProfilePageModule)
+=======
         path: 'search',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_search_search_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./search/search.module */ 4682)).then(m => m.SearchPageModule)
     },
     {
         path: 'geolocation',
         loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ionic-native_geolocation___ivy_ngcc___ngx_index_js"), __webpack_require__.e("src_app_geolocation_geolocation_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./geolocation/geolocation.module */ 8463)).then(m => m.GeolocationPageModule)
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     },
 ];
 let AppRoutingModule = class AppRoutingModule {
@@ -141,6 +178,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
+<<<<<<< HEAD
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/platform-browser */ 318);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ 2816);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic/angular */ 3819);
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 5041);
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-routing.module */ 158);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ 8784);
+/* harmony import */ var _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic-native/geolocation/ngx */ 287);
+/* harmony import */ var _ionic_native_native_geocoder_ngx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic-native/native-geocoder/ngx */ 9036);
+
+
+
+=======
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ 4929);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ 318);
@@ -148,6 +200,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ 3819);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-routing.module */ 158);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 
 
@@ -157,12 +210,26 @@ __webpack_require__.r(__webpack_exports__);
 
 let AppModule = class AppModule {
 };
+<<<<<<< HEAD
+AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.NgModule)({
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent],
+        entryComponents: [],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_6__.BrowserModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_7__.IonicModule.forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_8__.HttpClientModule],
+        providers: [
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_8__.HttpClient,
+            { provide: _angular_router__WEBPACK_IMPORTED_MODULE_9__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_7__.IonicRouteStrategy },
+            _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_2__.Geolocation,
+            _ionic_native_native_geocoder_ngx__WEBPACK_IMPORTED_MODULE_3__.NativeGeocoder
+        ],
+=======
 AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
     (0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.NgModule)({
         declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent],
         entryComponents: [],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonicModule.forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule],
         providers: [{ provide: _angular_router__WEBPACK_IMPORTED_MODULE_6__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__.IonicRouteStrategy }],
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent],
     })
 ], AppModule);
@@ -486,7 +553,11 @@ module.exports = webpackAsyncContext;
 /***/ ((module) => {
 
 "use strict";
+<<<<<<< HEAD
+module.exports = "* {\n  font-family: lato;\n}\n\n.menu-header-bg {\n  height: 180px;\n  width: 350px;\n  background: #e38692;\n  background: linear-gradient(90deg, #dc8490 0%, #e66274 100%);\n  box-shadow: 0px 1px 10px rgba(98, 140, 255, 0.5);\n  transform: rotate(-15deg);\n  border-radius: 10px 10px 10px 50px;\n  margin-left: -18px;\n  margin-top: -50px;\n  margin-bottom: 60px;\n}\n\n.header-content {\n  position: absolute;\n  top: 30px;\n  left: 15px;\n  display: flex;\n  align-items: center;\n}\n\n.header-content img {\n  width: 80px;\n  height: 80px;\n  border-radius: 50%;\n  border: 7px solid #e38692;\n  margin-right: 14px;\n}\n\n.header-content h2 {\n  font-weight: 300;\n  color: #fff;\n}\n\n.header-content p {\n  font-size: 12px;\n  color: #e4e4e4;\n  font-weight: 100;\n  letter-spacing: 0.4px;\n}\n\n.menu-items {\n  margin: 0px;\n}\n\n.menu-items ion-icon {\n  margin-right: 20px;\n}\n\n.menu-items ion-item {\n  padding-left: 20px;\n  margin-bottom: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGlCQUFBO0FBQ0o7O0FBRUE7RUFDSSxhQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0VBQ0EsNERBQUE7RUFDQSxnREFBQTtFQUNBLHlCQUFBO0VBQ0Esa0NBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7QUFDSjs7QUFFQTtFQUNJLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLFVBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7QUFDSjs7QUFDSTtFQUNJLFdBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSx5QkFBQTtFQUNBLGtCQUFBO0FBQ1I7O0FBRUk7RUFDSSxnQkFBQTtFQUNBLFdBQUE7QUFBUjs7QUFHSTtFQUNJLGVBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7RUFDQSxxQkFBQTtBQURSOztBQUtBO0VBQ0ksV0FBQTtBQUZKOztBQUlJO0VBQ0ksa0JBQUE7QUFGUjs7QUFLSTtFQUNJLGtCQUFBO0VBQ0EsbUJBQUE7QUFIUiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIqe1xyXG4gICAgZm9udC1mYW1pbHk6bGF0bztcclxufVxyXG5cclxuLm1lbnUtaGVhZGVyLWJne1xyXG4gICAgaGVpZ2h0OiAxODBweDtcclxuICAgIHdpZHRoOiAzNTBweDtcclxuICAgIGJhY2tncm91bmQ6ICNlMzg2OTI7XHJcbiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoOTBkZWcsI2RjODQ5MCAwJSwgI2U2NjI3NCAxMDAlKTtcclxuICAgIGJveC1zaGFkb3c6IDBweCAxcHggMTBweCByZ2JhKDk4LCAxNDAsIDI1NSwgMC41KTtcclxuICAgIHRyYW5zZm9ybTogcm90YXRlKC0xNWRlZyk7XHJcbiAgICBib3JkZXItcmFkaXVzOjEwcHggMTBweCAxMHB4IDUwcHg7XHJcbiAgICBtYXJnaW4tbGVmdDogLTE4cHg7XHJcbiAgICBtYXJnaW4tdG9wOi01MHB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbTo2MHB4O1xyXG59XHJcblxyXG4uaGVhZGVyLWNvbnRlbnR7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6MzBweDtcclxuICAgIGxlZnQ6MTVweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG5cclxuICAgIGltZ3tcclxuICAgICAgICB3aWR0aDogODBweDtcclxuICAgICAgICBoZWlnaHQ6IDgwcHg7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gICAgICAgIGJvcmRlcjogN3B4IHNvbGlkICNlMzg2OTI7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxNHB4O1xyXG4gICAgfVxyXG5cclxuICAgIGgye1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbiAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICB9XHJcblxyXG4gICAgcCB7XHJcbiAgICAgICAgZm9udC1zaXplOiAxMnB4O1xyXG4gICAgICAgIGNvbG9yOiAjZTRlNGU0O1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiAxMDA7XHJcbiAgICAgICAgbGV0dGVyLXNwYWNpbmc6IDAuNHB4O1xyXG4gICAgfVxyXG59XHJcblxyXG4ubWVudS1pdGVtc3tcclxuICAgIG1hcmdpbjowcHg7XHJcblxyXG4gICAgaW9uLWljb257XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAyMHB4O1xyXG4gICAgfVxyXG5cclxuICAgIGlvbi1pdGVte1xyXG4gICAgICAgIHBhZGRpbmctbGVmdDogMjBweDtcclxuICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gICAgfVxyXG59Il19 */";
+=======
 module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */";
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 /***/ }),
 
@@ -497,7 +568,11 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /***/ ((module) => {
 
 "use strict";
+<<<<<<< HEAD
+module.exports = "<ion-app>\r\n  <ion-menu menuId=\"main-menu\" content-id=\"main\">\r\n    <!--<ion-header>\r\n      <ion-toolbar color=\"flash-white\">\r\n        <ion-title>\r\n          Menu\r\n        </ion-title>\r\n      </ion-toolbar>\r\n    </ion-header>-->\r\n    <ion-content>\r\n      <div class=\"menu-header-bg\"></div>\r\n      <div class=\"header-content\">\r\n        <img src=\"../assets/images/profile-picture.png\" alt=\"\">\r\n        <ion-label>\r\n          <h2>Ali Baba</h2>\r\n          <p>Free Member</p>\r\n        </ion-label>\r\n      </div>\r\n      <ion-list class=\"menu-items\" lines=\"none\">\r\n        <ion-item href=\"./home/\">\r\n          <img src=\"../assets/icon/home.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n              Home\r\n          </ion-label>\r\n        </ion-item>\r\n        <ion-item href=\"./my-account/\">\r\n          <img src=\"../assets/icon/myaccount.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            My Account\r\n          </ion-label>\r\n        </ion-item>\r\n        <ion-item href=\"./promotions/\">\r\n          <img src=\"../assets/icon/promotions.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Promotion\r\n          </ion-label>\r\n        </ion-item>\r\n        <ion-item href=\"./pnv/\">\r\n          <img src=\"../assets/icon/pnv.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Point and Voucher\r\n          </ion-label>\r\n        </ion-item>\r\n        <ion-item href=\"./location/\">\r\n          <img src=\"../assets/icon/location.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Location\r\n          </ion-label>\r\n        </ion-item>\r\n        <ion-item href=\"./about-us/\">\r\n          <img src=\"../assets/icon/about-us.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n           About Us\r\n          </ion-label>\r\n        </ion-item>\r\n        <ion-item href=\"./tnc/\">\r\n          <img src=\"../assets/icon/tnc.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Terms and Conditions\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <!--\r\n      <ion-list>\r\n        <ion-item href=\"./home/\">\r\n          <img src=\"../assets/icon/home.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n              Home\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./my-account/\">\r\n          <img src=\"../assets/icon/myaccount.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            My Account\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./promotions/\">\r\n          <img src=\"../assets/icon/promotions.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Promotion\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./pnv/\">\r\n          <img src=\"../assets/icon/pnv.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Point and Vouchers\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./location/\">\r\n          <img src=\"../assets/icon/location.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Location\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./about-us/\">\r\n          <img src=\"../assets/icon/about-us.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n           About Us\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./tnc/\">\r\n          <img src=\"../assets/icon/tnc.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Terms and Conditions\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n    -->\r\n    </ion-content>\r\n  </ion-menu>\r\n\r\n  <ion-router-outlet id=\"main\"></ion-router-outlet>\r\n</ion-app>\r\n\r\n";
+=======
 module.exports = "<ion-app>\r\n  <ion-menu menuId=\"main-menu\" content-id=\"main\">\r\n    <ion-header>\r\n      <ion-toolbar color=\"flash-white\">\r\n        <ion-title>\r\n          Menu\r\n        </ion-title>\r\n      </ion-toolbar>\r\n    </ion-header>\r\n    <ion-content color=\"flash-white\">\r\n      <ion-list>\r\n        <ion-item href=\"./home/\">\r\n          <img src=\"../assets/icon/home.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n              Home\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./my-account/\">\r\n          <img src=\"../assets/icon/myaccount.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            My Account\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./promotions/\">\r\n          <img src=\"../assets/icon/promotions.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Promotion\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./pnv/\">\r\n          <img src=\"../assets/icon/pnv.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Point and Voucher\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./location/\">\r\n          <img src=\"../assets/icon/location.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Location\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./about-us/\">\r\n          <img src=\"../assets/icon/about-us.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n           About Us\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n      <ion-list>\r\n        <ion-item href=\"./tnc/\">\r\n          <img src=\"../assets/icon/tnc.png\" style=\"width: 20px; height: 20px;\" alt=\"\" slot=\"start\">\r\n          <ion-label>\r\n            Terms and Conditions\r\n          </ion-label>\r\n        </ion-item>\r\n      </ion-list>\r\n    </ion-content>\r\n  </ion-menu>\r\n\r\n  <ion-router-outlet id=\"main\"></ion-router-outlet>\r\n</ion-app>\r\n\r\n";
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 /***/ })
 
