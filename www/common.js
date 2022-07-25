@@ -1,6 +1,7 @@
 "use strict";
 (self["webpackChunkapp"] = self["webpackChunkapp"] || []).push([["common"],{
 
+<<<<<<< HEAD
 /***/ 67:
 /*!***************************************!*\
   !*** ./src/app/footer/footer.page.ts ***!
@@ -170,6 +171,8 @@ HomePage = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([
 
 /***/ }),
 
+=======
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /***/ 2621:
 /*!***********************************************!*\
   !*** ./src/app/promotions/promotions.page.ts ***!
@@ -420,7 +423,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "a": () => (/* binding */ attachComponent),
 /* harmony export */   "d": () => (/* binding */ detachComponent)
 /* harmony export */ });
+<<<<<<< HEAD
 /* harmony import */ var C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+=======
+/* harmony import */ var C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /* harmony import */ var _helpers_6e1e5b65_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers-6e1e5b65.js */ 8345);
 
 
@@ -430,7 +437,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const attachComponent = /*#__PURE__*/function () {
+<<<<<<< HEAD
   var _ref = (0,C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (delegate, container, component, cssClasses, componentProps, inline) {
+=======
+  var _ref = (0,C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (delegate, container, component, cssClasses, componentProps, inline) {
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     if (delegate) {
       return delegate.attachViewToDom(container, component, componentProps, cssClasses);
     }
@@ -477,7 +488,11 @@ const CoreDelegate = () => {
   let Reference;
 
   const attachViewToDom = /*#__PURE__*/function () {
+<<<<<<< HEAD
     var _ref2 = (0,C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (parentElement, userComponent, userComponentProps = {}, cssClasses = []) {
+=======
+    var _ref2 = (0,C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (parentElement, userComponent, userComponentProps = {}, cssClasses = []) {
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
       BaseComponent = parentElement;
       /**
        * If passing in a component via the `component` props
@@ -1166,7 +1181,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "h": () => (/* binding */ hostContext),
 /* harmony export */   "o": () => (/* binding */ openURL)
 /* harmony export */ });
+<<<<<<< HEAD
 /* harmony import */ var C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+=======
+/* harmony import */ var C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 
 /*!
@@ -1205,7 +1224,11 @@ const getClassMap = classes => {
 const SCHEME = /^[a-z][a-z0-9+\-.]*:/;
 
 const openURL = /*#__PURE__*/function () {
+<<<<<<< HEAD
   var _ref = (0,C_Users_wizni_Desktop_NRS_UIUX_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (url, ev, direction, animation) {
+=======
+  var _ref = (0,C_Users_wizni_Desktop_NRS_standard_code_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (url, ev, direction, animation) {
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     if (url != null && url[0] !== '#' && !SCHEME.test(url)) {
       const router = document.querySelector('ion-router');
 
@@ -1230,6 +1253,7 @@ const openURL = /*#__PURE__*/function () {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 9939:
 /*!****************************************************!*\
   !*** ./src/app/footer/footer.page.scss?ngResource ***!
@@ -1250,6 +1274,8 @@ module.exports = "#container {\n  text-align: center;\n  position: absolute;\n  
 
 /***/ }),
 
+=======
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /***/ 3263:
 /*!************************************************************!*\
   !*** ./src/app/promotions/promotions.page.scss?ngResource ***!
@@ -1260,6 +1286,7 @@ module.exports = "ion-col {\n  border-radius: 35px !important;\n  overflow: hidd
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 5298:
 /*!****************************************************!*\
   !*** ./src/app/footer/footer.page.html?ngResource ***!
@@ -1280,13 +1307,19 @@ module.exports = "<ion-header [translucent]=\"true\">\r\n  <ion-toolbar color=\"
 
 /***/ }),
 
+=======
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /***/ 6304:
 /*!************************************************************!*\
   !*** ./src/app/promotions/promotions.page.html?ngResource ***!
   \************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
 module.exports = "<ion-header translucent=\"true\">\r\n  <ion-toolbar color=\"danger\" mode=\"ios\">\r\n    <ion-title>Promotions</ion-title>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button menu=\"main-menu\"></ion-menu-button>\r\n          </ion-buttons>\r\n          <ion-button color=\"light\" slot=\"end\" fill=\"clear\" id=\"alignment-button\">\r\n           <ion-icon name=\"notifications-outline\"></ion-icon>\r\n          </ion-button>\r\n          <ion-popover trigger=\"alignment-button\" side=\"bottom\">\r\n            <ng-template>\r\n              <ion-content>\r\n                <ion-list>\r\n                  <ion-item>\r\n                   <ion-label>\r\n                     Notification 1\r\n                   </ion-label>\r\n                  </ion-item>\r\n                  <ion-item>\r\n                   <ion-label>\r\n                     Notification 2\r\n                   </ion-label>\r\n                 </ion-item>\r\n\r\n                </ion-list>\r\n              </ion-content>\r\n            </ng-template>\r\n          </ion-popover>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content color=\"flash-white\" fullscreen=\"\">\r\n<br>\r\n<ion-label>\r\n    <h1 class=\"list-promo\">List of Promotions</h1>\r\n  <br>\r\n  <br>\r\n</ion-label>\r\n<ion-grid fixed>\r\n  <ion-row>\r\n  <ion-col>\r\n      <ion-card color=\"\">\r\n        <ion-card-header>\r\n          <img src=\"../../assets/images/02.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n        </ion-card-header>\r\n        <ion-card-subtitle>\r\n          <p>PROMOTION 1</p>\r\n          <div class=\"ion-text-end\">\r\n            <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n            <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n            </ion-button>\r\n          </a>\r\n          </div>\r\n        </ion-card-subtitle>\r\n      </ion-card>\r\n  </ion-col>\r\n  <ion-col>\r\n    <div>\r\n    <ion-card color=\"\">\r\n      <ion-card-header>\r\n      <img src=\"../../assets/images/01.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n      </ion-card-header>\r\n      <ion-card-subtitle>\r\n        <p>PROMOTION 2</p>\r\n        <div class=\"ion-text-end\">\r\n          <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n          <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n          </ion-button>\r\n        </a>\r\n        </div>\r\n      </ion-card-subtitle>\r\n    </ion-card>\r\n    </div>\r\n  </ion-col>\r\n  </ion-row>\r\n  <ion-row>\r\n    <ion-col>\r\n        <ion-card color=\"\">\r\n          <ion-card-header>\r\n          <img src=\"../../assets/images/03.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n          </ion-card-header>\r\n          <ion-card-subtitle>\r\n            <p>PROMOTION 3</p>\r\n            <div class=\"ion-text-end\">\r\n              <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n              <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n              </ion-button>\r\n            </a>\r\n            </div>\r\n          </ion-card-subtitle>\r\n        </ion-card>\r\n    </ion-col>\r\n    <ion-col>\r\n      <ion-card color=\"\">\r\n        <ion-card-header>\r\n          <img src=\"../../assets/images/05.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n        </ion-card-header>\r\n        <ion-card-subtitle>\r\n          <p>PROMOTION 4</p>\r\n          <div class=\"ion-text-end\">\r\n            <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n            <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n            </ion-button>\r\n          </a>\r\n          </div>\r\n        </ion-card-subtitle>\r\n      </ion-card>\r\n    </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col col-12 col-xl-2 col-lg-3 col-md-4>\r\n          <ion-card color=\"\">\r\n            <ion-card-header>\r\n              <img src=\"../../assets/images/02.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n            </ion-card-header>\r\n            <ion-card-subtitle>\r\n              <p>PROMOTION 5</p>\r\n              <div class=\"ion-text-end\">\r\n                <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n                  <br>\r\n                  <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n                </ion-button>\r\n              </a>\r\n              </div>\r\n            </ion-card-subtitle>\r\n          </ion-card>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-card color=\"\">\r\n          <ion-card-header>\r\n          <img src=\"../../assets/images/01.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n          </ion-card-header>\r\n          <ion-card-subtitle>\r\n            <p>PROMOTION 6</p>\r\n            <div class=\"ion-text-end\">\r\n              <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n              <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n              </ion-button>\r\n            </a>\r\n            </div>\r\n          </ion-card-subtitle>\r\n        </ion-card>\r\n      </ion-col>\r\n      </ion-row>\r\n</ion-grid>\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-toolbar color=\"light\">\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./home/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/home-black.png\" style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./my-account/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/myaccount-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./promotions/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/promotions-red.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./location/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/location-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n  </ion-toolbar>\r\n\r\n\r\n  </ion-footer>\r\n";
+=======
+module.exports = "<ion-header translucent=\"true\">\r\n  <ion-toolbar color=\"danger\" mode=\"ios\">\r\n    <ion-title>Promotions</ion-title>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-menu-button menu=\"main-menu\"></ion-menu-button>\r\n          </ion-buttons>\r\n          <ion-button color=\"light\" slot=\"end\" fill=\"clear\" id=\"alignment-button\">\r\n           <ion-icon name=\"notifications-outline\"></ion-icon>\r\n          </ion-button>\r\n          <ion-popover trigger=\"alignment-button\" side=\"bottom\">\r\n            <ng-template>\r\n              <ion-content>\r\n                <ion-list>\r\n                  <ion-item>\r\n                   <ion-label>\r\n                     Notification 1\r\n                   </ion-label>\r\n                  </ion-item>\r\n                  <ion-item>\r\n                   <ion-label>\r\n                     Notification 2\r\n                   </ion-label>\r\n                 </ion-item>\r\n\r\n                </ion-list>\r\n              </ion-content>\r\n            </ng-template>\r\n          </ion-popover>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content color=\"flash-white\" fullscreen=\"\">\r\n<br>\r\n<ion-label>\r\n    <h1 class=\"list-promo\">List of Promotions</h1>\r\n  <br>\r\n  <br>\r\n</ion-label>\r\n<ion-grid>\r\n  <ion-row>\r\n  <ion-col>\r\n      <ion-card color=\"\">\r\n        <ion-card-header>\r\n          <img src=\"../../assets/images/02.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n        </ion-card-header>\r\n        <ion-card-subtitle>\r\n          <p>PROMOTION 1</p>\r\n          <div class=\"ion-text-end\">\r\n            <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n            <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n            </ion-button>\r\n          </a>\r\n          </div>\r\n        </ion-card-subtitle>\r\n      </ion-card>\r\n  </ion-col>\r\n  <ion-col>\r\n    <ion-card color=\"\">\r\n      <ion-card-header>\r\n      <img src=\"../../assets/images/01.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n      </ion-card-header>\r\n      <ion-card-subtitle>\r\n        <p>PROMOTION 2</p>\r\n        <div class=\"ion-text-end\">\r\n          <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n          <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n          </ion-button>\r\n        </a>\r\n        </div>\r\n      </ion-card-subtitle>\r\n    </ion-card>\r\n  </ion-col>\r\n  </ion-row>\r\n  <ion-row>\r\n    <ion-col>\r\n        <ion-card color=\"\">\r\n          <ion-card-header>\r\n          <img src=\"../../assets/images/03.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n          </ion-card-header>\r\n          <ion-card-subtitle>\r\n            <p>PROMOTION 3</p>\r\n            <div class=\"ion-text-end\">\r\n              <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n              <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n              </ion-button>\r\n            </a>\r\n            </div>\r\n          </ion-card-subtitle>\r\n        </ion-card>\r\n    </ion-col>\r\n    <ion-col>\r\n      <ion-card color=\"\">\r\n        <ion-card-header>\r\n          <img src=\"../../assets/images/05.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n        </ion-card-header>\r\n        <ion-card-subtitle>\r\n          <p>PROMOTION 4</p>\r\n          <div class=\"ion-text-end\">\r\n            <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n            <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n            </ion-button>\r\n          </a>\r\n          </div>\r\n        </ion-card-subtitle>\r\n      </ion-card>\r\n    </ion-col>\r\n    </ion-row>\r\n    <ion-row>\r\n      <ion-col col-12 col-xl-2 col-lg-3 col-md-4>\r\n          <ion-card color=\"\">\r\n            <ion-card-header>\r\n              <img src=\"../../assets/images/02.webp\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n            </ion-card-header>\r\n            <ion-card-subtitle>\r\n              <p>PROMOTION 5</p>\r\n              <div class=\"ion-text-end\">\r\n                <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n                  <br>\r\n                  <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n                </ion-button>\r\n              </a>\r\n              </div>\r\n            </ion-card-subtitle>\r\n          </ion-card>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-card color=\"\">\r\n          <ion-card-header>\r\n          <img src=\"../../assets/images/01.jpg\" style=\"height: 150px; width: 200px;\" alt=\"\">\r\n          </ion-card-header>\r\n          <ion-card-subtitle>\r\n            <p>PROMOTION 6</p>\r\n            <div class=\"ion-text-end\">\r\n              <a href=\"./promotion1/\"><ion-button style=\"size: default;\" fill=\"clear\">\r\n              <ion-icon color=\"dark\" name=\"chevron-forward-circle-sharp\"></ion-icon>\r\n              </ion-button>\r\n            </a>\r\n            </div>\r\n          </ion-card-subtitle>\r\n        </ion-card>\r\n      </ion-col>\r\n      </ion-row>\r\n</ion-grid>\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-toolbar color=\"light\">\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./home/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/home-black.png\" style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./my-account/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/myaccount-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./promotions/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/promotions-red.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n    <ion-button fill=\"clear\">\r\n      <a href=\"./location/\"><img class=\"nav-bar-img\" src=\"../../assets/icon/location-black.png\"  style=\"height: 45px; width: 50px;\" alt=\"\"></a>\r\n    </ion-button>\r\n  </ion-toolbar>\r\n\r\n\r\n  </ion-footer>\r\n";
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 /***/ })
 

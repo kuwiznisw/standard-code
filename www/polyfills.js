@@ -3936,7 +3936,11 @@ module.exports = function (originalArray, length) {
 
 "use strict";
 
+<<<<<<< HEAD
 var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 9652);
+=======
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 2149);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 var uncurryThis = __webpack_require__(/*! ../internals/function-uncurry-this */ 2006);
 var aCallable = __webpack_require__(/*! ../internals/a-callable */ 9366);
 var lengthOfArrayLike = __webpack_require__(/*! ../internals/length-of-array-like */ 7951);
@@ -4836,7 +4840,11 @@ module.exports = function (it) {
   \*************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+<<<<<<< HEAD
 var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 9652);
+=======
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 2149);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 module.exports = getBuiltIn('navigator', 'userAgent') || '';
 
@@ -5106,7 +5114,11 @@ module.exports = NATIVE_BIND ? function (fn) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 9652:
+=======
+/***/ 2149:
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /*!********************************************************!*\
   !*** ./node_modules/core-js/internals/get-built-in.js ***!
   \********************************************************/
@@ -5251,7 +5263,11 @@ module.exports = {};
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+<<<<<<< HEAD
 var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 9652);
+=======
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 2149);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 
 module.exports = getBuiltIn('document', 'documentElement');
 
@@ -5598,7 +5614,11 @@ var uncurryThis = __webpack_require__(/*! ../internals/function-uncurry-this */ 
 var fails = __webpack_require__(/*! ../internals/fails */ 7944);
 var isCallable = __webpack_require__(/*! ../internals/is-callable */ 4513);
 var classof = __webpack_require__(/*! ../internals/classof */ 2212);
+<<<<<<< HEAD
 var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 9652);
+=======
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 2149);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 var inspectSource = __webpack_require__(/*! ../internals/inspect-source */ 6073);
 
 var noop = function () { /* empty */ };
@@ -5715,7 +5735,11 @@ module.exports = false;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var global = __webpack_require__(/*! ../internals/global */ 4720);
+<<<<<<< HEAD
 var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 9652);
+=======
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 2149);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 var isCallable = __webpack_require__(/*! ../internals/is-callable */ 4513);
 var isPrototypeOf = __webpack_require__(/*! ../internals/object-is-prototype-of */ 846);
 var USE_SYMBOL_AS_UID = __webpack_require__(/*! ../internals/use-symbol-as-uid */ 6762);
@@ -6455,7 +6479,11 @@ module.exports = function (input, pref) {
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+<<<<<<< HEAD
 var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 9652);
+=======
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 2149);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 var uncurryThis = __webpack_require__(/*! ../internals/function-uncurry-this */ 2006);
 var getOwnPropertyNamesModule = __webpack_require__(/*! ../internals/object-get-own-property-names */ 4283);
 var getOwnPropertySymbolsModule = __webpack_require__(/*! ../internals/object-get-own-property-symbols */ 6095);
@@ -6554,7 +6582,11 @@ var TEMPLATE = String(String).split('String');
 // TODO: in core-js@4, move /modules/ dependencies to public entries for better optimization by tools like `preset-env`
 __webpack_require__(/*! ../modules/es.map */ 4564);
 __webpack_require__(/*! ../modules/es.weak-map */ 3902);
+<<<<<<< HEAD
 var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 9652);
+=======
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 2149);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 var uncurryThis = __webpack_require__(/*! ../internals/function-uncurry-this */ 2006);
 var shared = __webpack_require__(/*! ../internals/shared */ 5443);
 
@@ -6666,7 +6698,11 @@ module.exports = function (key, value) {
 
 "use strict";
 
+<<<<<<< HEAD
 var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 9652);
+=======
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ 2149);
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 var definePropertyModule = __webpack_require__(/*! ../internals/object-define-property */ 6607);
 var wellKnownSymbol = __webpack_require__(/*! ../internals/well-known-symbol */ 7014);
 var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ 5601);

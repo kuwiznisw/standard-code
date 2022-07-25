@@ -21,6 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
+<<<<<<< HEAD
         path: 'footer',
         component: _footer_page__WEBPACK_IMPORTED_MODULE_0__.FooterPage,
         children: [
@@ -51,6 +52,10 @@ const routes = [
         path: '',
         redirectTo: '/footer/home',
         pathMatch: 'full'
+=======
+        path: '',
+        component: _footer_page__WEBPACK_IMPORTED_MODULE_0__.FooterPage
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
     }
 ];
 let FooterPageRoutingModule = class FooterPageRoutingModule {
@@ -106,6 +111,65 @@ FooterPageModule = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
 
 
 
+<<<<<<< HEAD
+=======
+/***/ }),
+
+/***/ 67:
+/*!***************************************!*\
+  !*** ./src/app/footer/footer.page.ts ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FooterPage": () => (/* binding */ FooterPage)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _footer_page_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.page.html?ngResource */ 5298);
+/* harmony import */ var _footer_page_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.page.scss?ngResource */ 9939);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 3184);
+
+
+
+
+let FooterPage = class FooterPage {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+FooterPage.ctorParameters = () => [];
+FooterPage = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Component)({
+        selector: 'app-footer',
+        template: _footer_page_html_ngResource__WEBPACK_IMPORTED_MODULE_0__,
+        styles: [_footer_page_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__]
+    })
+], FooterPage);
+
+
+
+/***/ }),
+
+/***/ 9939:
+/*!****************************************************!*\
+  !*** ./src/app/footer/footer.page.scss?ngResource ***!
+  \****************************************************/
+/***/ ((module) => {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJmb290ZXIucGFnZS5zY3NzIn0= */";
+
+/***/ }),
+
+/***/ 5298:
+/*!****************************************************!*\
+  !*** ./src/app/footer/footer.page.html?ngResource ***!
+  \****************************************************/
+/***/ ((module) => {
+
+module.exports = "<ion-footer>\r\n  <ion-toolbar>\r\n    <ion-button fill=\"clear\">\r\n      <img src=\"../../assets/icon/house.png\" style=\"height: 30px; width: 30px;\" alt=\"\">\r\n    </ion-button>\r\n  </ion-toolbar>\r\n\r\n\r\n  </ion-footer>\r\n";
+
+>>>>>>> 5263dac32eaf6712b4307010a3b0f876e60db6df
 /***/ })
 
 }]);

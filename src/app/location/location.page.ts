@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+=======
+// home.page.ts
+import { Component, ViewChild, ElementRef } from '@angular/core';
+=======
 // home.page.ts
 import { Component, ViewChild, ElementRef } from '@angular/core';
 
@@ -6,6 +14,12 @@ import { NativeGeocoder, NativeGeocoderResult, NativeGeocoderOptions } from '@io
 
 declare let google;
 
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { NativeGeocoder, NativeGeocoderResult, NativeGeocoderOptions } from '@ionic-native/native-geocoder/ngx';
+
+
+
+declare let google;
 @Component({
   selector: 'app-location',
   templateUrl: 'location.page.html',
@@ -22,8 +36,8 @@ export class LocationPage {
 
   constructor(
     private geolocation: Geolocation,
-    private nativeGeocoder: NativeGeocoder) {
-  }
+    private nativeGeocoder: NativeGeocoder){
+
 
 
   ngOnInit() {
@@ -87,6 +101,28 @@ export class LocationPage {
         this.address = 'Address Not Available!';
       });
 
+  }
+
+  ngAfterViewInit(): void {
+    this.location.getCurrentPosition().then((resp) => {
+      this.latitude = resp.coords.latitude;
+      this.longitude = resp.coords.longitude;
+      const map = new google.maps.Map(this.mapNativeElement.nativeElement, {
+        center: {lat: 3.080, lng:  101.451},
+        zoom: 6
+      });
+      const infoWindow = new google.maps.InfoWindow();
+      const pos = {
+        lat: this.latitude,
+        lng: this.longitude
+      };
+      infoWindow.setPosition(pos);
+      infoWindow.setContent('Location found.');
+      infoWindow.open(map);
+      map.setCenter(pos);
+    }).catch((error) => {
+      console.log('Error getting location', error);
+    });
   }
 
 }
