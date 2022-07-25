@@ -20,7 +20,7 @@ const routes: Routes = [
         loadChildren: () => import('../promotions/promotions.module').then(m => m.PromotionsPageModule)
       },
       {
-        path: 'promotion',
+        path: 'location',
         loadChildren: () => import('../location/location.module').then(m => m.LocationPageModule)
       },
       {

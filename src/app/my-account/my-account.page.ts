@@ -7,20 +7,20 @@ import { FooterPage } from '../footer/footer.page';
 })
 export class MyAccountPage implements OnInit {
   router: any;
-  account: string = "MEMBER E-CARD";
+  account = 'MEMBER E-CARD';
   footer: FooterPage;
-  constructor() { 
+  constructor() {
   }
 
   ngOnInit() {
   }
 
   editProfile() {
-    this.router.navigate(["./edit-profile"])
+    this.router.navigate(['./edit-profile']);
   }
 
   ionViewWillEnter(){
-    this.footer.tabSelected(2)
+    this.footer.tabSelected(2);
   }
 
 }
